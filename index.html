@@ -1,75 +1,143 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Магазин вкусного мороженого Глейси</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img" width="100" height="100" alt="Логотип Глейси">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="сatalog.html">Каталог</a></li>
-          <li><a href="delivery">Доставка и оплата</a></li>
-          <li><a href="about-us">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="button">Поиск</a></li>
-          <li><a href="button">Вход</a></li>
-          <li><a href="button">Корзинa</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <h1 class="visually-hidden">главная страница</h1>
-      <section class="advantages">
-        <h2 class="visually-hidden">преимущества</h2>
-        <span class="specification shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</span>
-        <ul class="excellence-lead">
-          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
-          <li>Закупка ингредиентов  производится только у проверенныхфермерских хозяйств и компаний, с которыми нас связываетдолговременное сотрудничество.</li>
-          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-        </ul>
-      </section>
-      <section class="news-and-mail">
-        <h2 class="visually-hidden">новости и рассылка</h2>
-        <article class="news"><img src="img/strawberry_background.jpg" alt="клубничный фон">
-          <h3 class="visually-hidden">блог</h3>
-          <p>Новое в нашем блоге</p>
-          <p><a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a></p>
+<head>
+  <meta charset="utf-8">
+  <title>Магазин вкусного мороженого Глейси</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img" alt="Логотип Глейси" width="100" height="100">
+      </a>
+      <ul class="site-navigation">
+        <li class="catalog-label">Каталог
+          <div class="catalog-dropdown">
+            <ul>
+              <li><a href="сatalog.html/brand_new">Новинки</a></li>
+              <li><a href="сatalog.html/sliv">Сливочное</a></li>
+              <li><a href="сatalog.html/sher">Шербеты</a></li>
+              <li><a href="сatalog.html/fru">Фруктовый лед</a></li>
+              <li><a href="сatalog.html/mel">Мелорин</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="delivery">Доставка и оплата</a></li>
+        <li><a href="about-us">О компании</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li>
+          <a href="button">Поиск</a>
           
-        </article>
-        <article class="mail">
-          <h3 class="visually-hidden">рассылка</h3>
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <a class="button" href="mail.html">Отправить</a>
-        </article>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Tvitter</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Vkontakte</a></li>
-        </ul>
-      </div>
-      <div class="footer-info">
-        <ul>
-          <li><a class="info" href="#">Для поставщиков</a></li>
-          <li><a class="info" href="#">О производстве</a></li>
-          <li><a class="info" href="#">Наши документы</a></li>
-          <li><a class="info" href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <p>Сделано в HTML Academy</p>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </div>
-    </footer>
-  </body>
-</html>
+          <form style="width:300px; box-shadow: 0 0 10px #cccccc" class="search-form" method="get" action="https:_.ru">
+            <p>
+              <label for="search-input" hidden="">Что ищем?</label>
+              <input type="text" id="search-input" placeholder="Что ищем?">
+            </p>
+          </form>
+        </li>
+        <li><a class="login-link" href="login.html">Вход</a>
+        <form style="width:300px; box-shadow: 0 0 10px #cccccc" class="login-form" method="get" action="https:_.ru">
+          <p>
+            <label for="login-user" hidden="">Электронная почта</label>
+            <input type="text" id="login-user" name="login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label for="user-password" hidden="">Пароль</label>
+            <input id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p>
+            <button type="submit">Войти</button>
+          </p>
+          <p>
+            <a class="login-form-link" href="#">Забыли пароль?</a>
+          </p>
+          <p>
+            <a class="login-form-link" href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </li>
+      
+      
+      <li><a href="button">Корзинa</a></li>
+      <form class="basket" method="get" action="https://glassyshop.ru">
+        
+      </form>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+  <h1 class="visually-hidden">главная страница</h1>
+  <section class="advantages">
+    <h2 class="visually-hidden">преимущества</h2>
+    <span class="specification shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</span>
+    <ul class="excellence-lead">
+      <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+      <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
+      <li>Закупка ингредиентов  производится только у проверенныхфермерских хозяйств и компаний, с которыми нас связываетдолговременное сотрудничество.</li>
+      <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+    </ul>
+  </section>
+  <section class="news-and-mail">
+    <h2 class="visually-hidden">новости и рассылка</h2>
+    <article class="news"><img src="img/strawberry_background.jpg" alt="клубничный фон"><!--это же фон? куда его вставить?-->
+    <h3 class="visually-hidden">блог</h3>
+    <p>Новое в нашем блоге</p>
+    <p><a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a></p>
+    
+  </article>
+  <article class="mail">
+    <h3 class="visually-hidden">рассылка</h3>
+    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <a class="button" href="mail.html">Отправить</a>
+  </article>
+</section>
+<figure class="map">
+  <p><img src="img/map.svg" alt="Карта с адресом"></p>
+  <form style="width:300px; box-shadow: 0 0 10px #cccccc" class="search-form" method="get" action="https:_.ru">
+    <p>Адрес главного офиса и онлайн магазина</p>
+    <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+    <p>для заказов по телефону:</p>
+    <p>8 812 450-25-25</p>
+    <p>(с 10 до 20 часов)</p>
+    <button type="submit">Форма обратной связи</button>
+  </form>
+</figure>
+<form style="width:300px; box-shadow: 0 0 10px #cccccc" class="search-form" method="get" action="https:_.ru">
+  <h3>Мы обязательно вам ответим!</h3>
+  <p>
+    <label for="input" hidden="user-name">Как вас зовут?</label>
+    <input type="text" id="user-name" placeholder="Как вас зовут?">
+  </p>
+  <p>
+    <label for="input" hidden="user-mail">Ваша почта для ответа?</label>
+    <input type="text" id="user-mail" placeholder="Ваша почта для ответа?">
+  </p>
+  <p>
+    <label for="input" hidden="user-message">Напишите что-нибудь</label>
+    <textarea type="text" id="user-message" placeholder="Напишите что-нибудь..."></textarea>
+  </p>
+  <button type="submit">Отправить</button>
+</form>
+</main>
+<footer class="main-footer">
+<div class="footer-social">
+  <ul>
+    <li><a class="social-button" href="#">Twitter</a></li>
+    <li><a class="social-button" href="#">Instagram</a></li>
+    <li><a class="social-button" href="#">Facebook</a></li>
+    <li><a class="social-button" href="#">Vkontakte</a></li>
+  </ul>
+</div>
+<div class="footer-info">
+  <ul>
+    <li><a class="info" href="#">Для поставщиков</a></li>
+    <li><a class="info" href="#">О производстве</a></li>
+    <li><a class="info" href="#">Наши документы</a></li>
+    <li><a class="info" href="#">Экологические стандарты</a></li>
+  </ul>
+</div>
+<div class="footer-copyright">
+  <p>Сделано в HTML Academy</p>
+  <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+</div>
+</footer>
+</body>
