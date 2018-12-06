@@ -9,16 +9,14 @@
         <img src="img" alt="Логотип Глейси" width="100" height="100">
       </a>
       <ul class="site-navigation">
-        <li class="catalog-label">Каталог
-          <div class="catalog-dropdown">
-            <ul>
-              <li><a href="сatalog.html/brand_new">Новинки</a></li>
-              <li><a href="сatalog.html/sliv">Сливочное</a></li>
-              <li><a href="сatalog.html/sher">Шербеты</a></li>
-              <li><a href="сatalog.html/fru">Фруктовый лед</a></li>
-              <li><a href="сatalog.html/mel">Мелорин</a></li>
-            </ul>
-          </div>
+        <li class="catalog-dropdown">Каталог
+          <ul>
+            <li><a href="сatalog.html/brand_new">Новинки</a></li>
+            <li><a href="сatalog.html/sliv">Сливочное</a></li>
+            <li><a href="сatalog.html/sher">Шербеты</a></li>
+            <li><a href="сatalog.html/fru">Фруктовый лед</a></li>
+            <li><a href="сatalog.html/mel">Мелорин</a></li>
+          </ul>
         </li>
         <li><a href="delivery">Доставка и оплата</a></li>
         <li><a href="about-us">О компании</a></li>
@@ -26,7 +24,6 @@
       <ul class="user-navigation">
         <li>
           <a href="button">Поиск</a>
-          
           <form style="width:300px; box-shadow: 0 0 10px #cccccc" class="search-form" method="get" action="https:_.ru">
             <p>
               <label for="search-input" hidden="">Что ищем?</label>
@@ -44,31 +41,22 @@
             <label for="user-password" hidden="">Пароль</label>
             <input id="user-password" type="password" name="password" placeholder="Пароль">
           </p>
-          <p>
-            <button type="submit">Войти</button>
-          </p>
-          <p>
-            <a class="login-form-link" href="#">Забыли пароль?</a>
-          </p>
-          <p>
-            <a class="login-form-link" href="#">Новая регистрация</a>
-          </p>
+          <button type="submit">Войти</button>
+          <a class="login-form-link" href="#">Забыли пароль?</a>
+          <a class="login-form-link" href="#">Новая регистрация</a>
         </form>
       </li>
-      
-      
       <li><a href="button">Корзинa</a></li>
       <form class="basket" method="get" action="https://glassyshop.ru">
-        
       </form>
     </ul>
   </nav>
 </header>
 <main class="container">
-  <h1 class="visually-hidden">главная страница</h1>
+  <h1 class="visually-hidden">Главная страница</h1>
   <section class="advantages">
-    <h2 class="visually-hidden">преимущества</h2>
-    <span class="specification shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</span>
+    <h2 class="visually-hidden">Преимущества</h2>
+    <p class="specification shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
     <ul class="excellence-lead">
       <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
       <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
@@ -76,20 +64,14 @@
       <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
     </ul>
   </section>
-  <section class="news-and-mail">
-    <h2 class="visually-hidden">новости и рассылка</h2>
-    <article class="news"><img src="img/strawberry_background.jpg" alt="клубничный фон"><!--это же фон? куда его вставить?-->
-    <h3 class="visually-hidden">блог</h3>
-    <p>Новое в нашем блоге</p>
-    <p><a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a></p>
-    
-  </article>
-  <article class="mail">
-    <h3 class="visually-hidden">рассылка</h3>
-    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-    <a class="button" href="mail.html">Отправить</a>
-  </article>
+  <section class="news"><img src="img/strawberry_background.jpg" alt="клубничный фон"><!--это же фон? куда его вставить?-->
+  <h3 class="blog news">Новое в нашем блоге</h3>
+  <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
 </section>
+<form style="width:300px; box-shadow: 0 0 10px #cccccc" class="news-form" method="get" action="https:_.ru">
+  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+  <a class="button" href="mail.html">Отправить</a>
+</form>
 <figure class="map">
   <p><img src="img/map.svg" alt="Карта с адресом"></p>
   <form style="width:300px; box-shadow: 0 0 10px #cccccc" class="search-form" method="get" action="https:_.ru">
@@ -98,7 +80,7 @@
     <p>для заказов по телефону:</p>
     <p>8 812 450-25-25</p>
     <p>(с 10 до 20 часов)</p>
-    <button type="submit">Форма обратной связи</button>
+    <a class="feedback-form" href="#">Форма обратной связи</a>
   </form>
 </figure>
 <form style="width:300px; box-shadow: 0 0 10px #cccccc" class="search-form" method="get" action="https:_.ru">
@@ -113,7 +95,8 @@
   </p>
   <p>
     <label for="input" hidden="user-message">Напишите что-нибудь</label>
-    <textarea type="text" id="user-message" placeholder="Напишите что-нибудь..."></textarea>
+    <textarea type="text" id="user-message" rows="2" placeholder="Напишите что-нибудь..."
+    required></textarea>
   </p>
   <button type="submit">Отправить</button>
 </form>
@@ -141,3 +124,4 @@
 </div>
 </footer>
 </body>
+</html>
