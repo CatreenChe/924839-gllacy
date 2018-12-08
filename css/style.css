@@ -1,0 +1,149 @@
+body {
+margin: 0;
+font-family: "Roboto", Arrial, sans-serif;
+font-size:16px;
+line-height:22px;
+font-weight:500;
+color: #ffffff;
+text-transform: normal;
+background-color:#849d8f;
+background-repeat: no-repeat;
+}
+
+a{
+text-decoration: none;
+}
+
+.main-navigation {
+font-weight:700;
+font-size:16px;
+line-height:18px;
+color: #ffffff;
+background-color:#849d8f;
+}
+
+.site-navigation a,
+.user-navigation a {
+list-style: none;
+color: #ffffff;
+background-color:#849d8f;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #f6b8af;
+  background-color:#849d8f;
+}
+
+.advantages {
+font-weight:400;
+font-size:16px;
+line-height:22px;
+color: #323232;
+background-color:#ffffff;
+border-radius: 8px;
+}
+
+.advantages p{ /*.advantages .specification-shop не срабатывает. что не так?*/
+  font-size:24px;
+line-height:30px;
+}
+
+.blog{
+  width:50%; /*поменять на px. как измерить ширину блока?*/
+color:#323232;
+background-color:#ffffff;
+font-size:16px;
+line-height:22px;
+border-radius: 8px; /*как измерить радиус?*/
+}
+
+.blog a{ 
+font-weight: 700;
+color:#323232;
+background-color:#ffffff;
+font-size:24px;
+line-height:30px;
+text-decoration: underline;
+}
+
+.newsletter { /*не рамка, нужна полосатая подложка*/
+width:50%; /*поменять на px. как измерить ширину блока?*/
+font-size:16px;
+line-height:22px;
+color: #5a5a5a;
+background-color:#f8f7f4;
+border-radius: 8px;
+border-botton: 5px solid red;
+}
+
+.store-address {
+width:25%; /*поменять на px*/
+font-weight:700;
+font-size:18px;
+line-height:24px;
+color:#323232;
+background-color:#fefefe;
+border-radius: 8px;
+
+}
+
+.store-address .contact-description{
+font-weight:400;
+font-size:14px;
+line-height:20px;
+}
+
+.store-address a {
+color:#fefefe;
+background-color:#ef5f3f;
+border-radius: 20px;
+}
+
+
+.main-footer {
+font-weight:400;
+font-size:13px;
+line-height:18px;
+color: #e6ebe9;
+background-color:#849d8f;
+}
+
+.footer-social a,
+.footer-info a,
+.footer-copyright a{ 
+color: #e6ebe9;
+background-color:#849d8f;
+}
+
+.footer-info li:nth-child(1){
+font-weight:700;
+}
+
+.footer-social a:hover{
+color: #323232;
+background-color:#9db1a5;
+}
+
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+color: #f6b8af;
+background-color:#849d8f;
+}
+
+button
+/*input  - как указать input только для type="submit"?*/ {
+padding: 10px;
+color:#fefefe;
+background-color:#eb563b;
+border-radius: 20px;
+}
+
+button:hover {
+background-color:#f07962;
+border-radius: 20px;
+}
