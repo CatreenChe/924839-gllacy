@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин вкусного мороженого Глейси</title>
-  <link  href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic rel="stylesheet">
+  <link  href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link  href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -74,28 +74,34 @@
 <section class="advantages">
   <h2 class="visually-hidden">Преимущества</h2>
   <p class="specification-shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-  <ul class="excellence-lead">
-    <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-    <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
+  <div class="advantages-item">
+    <ul class="excellence-lead">
+    <li><img src="img/ice-cream.svg" alt="Иконка мороженого"><!--cюда нужно добвл иконки или это через CSS делаеися?-->Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+    <li><img src="img/eco.svg" alt="Иконка эко-продукта"><!--cюда нужно добвл иконки или это через CSS делаеися?-->Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
+  </ul>
+  </div>
+  <div class="advantages-item">
+   <ul class="excellence-lead">
     <li>Закупка ингредиентов  производится только у проверенныхфермерских хозяйств и компаний, с которыми нас связываетдолговременное сотрудничество.</li>
     <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
   </ul>
+  </div>
 </section>
+<div class="blog-newsletter"> <!--добавила див,чтоб был контейнер для двух блоков. не помогло пока-->
 <section class="blog">
-<!--это же фон? куда его вставить?-->
-<h3 class="blog-news">Новое в нашем блоге</h3>
-<a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
+  <h3>Новое в нашем блоге</h3>
+  <a href="blog.html">10 способов сервировки фруктовых шербетов к столу
+  </a>
 </section>
-
 <section class="newsletter">
-<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-<form class="mail-form" method="get" action="https:_.ru">
-  <label for="input" hidden="user-mail">Электронная почта</label>
-  <input type="text" id="user-mail" placeholder="Электронная почта">
-  <input type="submit" value="Отправить">
-</form>
+  <p class="newsletter-p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+  <form class="mail-form" method="get" action="https:_.ru">
+    <label for="input" hidden="user-mail">Электронная почта</label>
+    <input type="text" id="user-mail" placeholder="Электронная почта">
+    <input type="submit" value="Отправить">
+  </form>
 </section>
-
+</div>
 <figure class="map">
 <p><img src="img/map.svg" alt="Карта с адресом"></p>
 <div class="store-address" method="get" action="https:_.ru">
@@ -107,7 +113,6 @@
   <a class="feedback-form" href="#">Форма обратной связи</a>
 </div>
 </figure>
-
 <div class="contact-form">
 <form class="search-form" method="get" action="https:_.ru">
   <h3>Мы обязательно вам ответим!</h3>
@@ -128,17 +133,13 @@
 </form>
 <input type="button" id="cancel_edit" value="Закрыть"></input>
 </div>
-
-
 </main>
 <footer class="main-footer">
 <div class="footer-social">
-<ul>
-  <li><a class="social-button" href="#">Twitter</a></li>
-  <li><a class="social-button" href="#">Instagram</a></li>
-  <li><a class="social-button" href="#">Facebook</a></li>
-  <li><a class="social-button" href="#">Vkontakte</a></li>
-</ul>
+  <div><a class="social-button" href="#"><img src="img/twitter.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/instagram.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/fb.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/vk.svg"></a></div>
 </div>
 <div class="footer-info">
 <ul>
@@ -150,7 +151,7 @@
 </div>
 <div class="footer-copyright">
 <p>Сделано в HTML Academy</p>
-<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+<a class="htmlacademy-button" href="https://htmlacademy.ru">HTML Academy</a>
 </div>
 </footer>
 </body>

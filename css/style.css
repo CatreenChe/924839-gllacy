@@ -1,84 +1,103 @@
 body {
+width:1200px; 
+height:auto;
 margin: 0;
-font-family: "Roboto", Arrial, sans-serif;
+font-family: "Roboto", Arial, sans-serif;
 font-size:16px;
-line-height:22px;
 font-weight:500;
-color: #ffffff;
-text-transform: normal;
+color:#ffffff;
 background-color:#849d8f;
-background-repeat: no-repeat;
 }
-
 a{
 text-decoration: none;
 }
+
 
 .main-navigation {
 font-weight:700;
 font-size:16px;
 line-height:18px;
-color: #ffffff;
-background-color:#849d8f;
+color:#ffffff;
 }
 
+site-navigation{
+display: flex;
+justify-content: row;
+
+}
 .site-navigation a,
 .user-navigation a {
 list-style: none;
-color: #ffffff;
-background-color:#849d8f;
+color:#ffffff;
 }
-
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  color: #f6b8af;
-  background-color:#849d8f;
+color:#f6b8af;
+background-color:#849d8f;
 }
-
 .advantages {
+padding:20px 30px 0px 20px;
 font-weight:400;
 font-size:16px;
 line-height:22px;
-color: #323232;
+color:#323232;
 background-color:#ffffff;
-border-radius: 8px;
+border-radius:14px;
 }
-
-.advantages p{ /*.advantages .specification-shop не срабатывает. что не так?*/
-  font-size:24px;
+.advantages .specification-shop {
+font-size:24px;
 line-height:30px;
 }
 
+.advantages-item {
+display: inline-block; /*как правильно тут сделать?*/
+width:48%; /*значение взяла приблизительное*/
+border: 5px solid green; /*для наглядности, потом убрать*/
+}
+
+.blog-newsletter {
+  width:1200px;
+  height:220px;
+  border: 5px solid red; /*для наглядности, потом убрать*/
+display: flex;
+justify-content: space-around;
+}
+
 .blog{
-  width:50%; /*поменять на px. как измерить ширину блока?*/
-color:#323232;
+width:560px;
+background-image: url(../img/strawberry-background.jpg);
 background-color:#ffffff;
 font-size:16px;
 line-height:22px;
-border-radius: 8px; /*как измерить радиус?*/
+border-radius:14px; 
+padding-left: 20px;
+padding-top: 10px; 
 }
-
-.blog a{ 
-font-weight: 700;
+.blog a{
+width:50%; /*почему тект наползает на картинку?*/
 color:#323232;
 background-color:#ffffff;
 font-size:24px;
 line-height:30px;
 text-decoration: underline;
-}
 
-.newsletter { /*не рамка, нужна полосатая подложка*/
-width:50%; /*поменять на px. как измерить ширину блока?*/
+}
+.newsletter { 
+width:560px;
+background-image: url(../img/bg-post.svg);/*как убрать подложку на задний фон? Это же должен быть еще один блок,где лежит только фон?*/
 font-size:16px;
 line-height:22px;
 color: #5a5a5a;
 background-color:#f8f7f4;
-border-radius: 8px;
-border-botton: 5px solid red;
+border-radius:14px;
+border-bottom:5px solid red;
 }
-
+.newsletter > .newsletter-p, .mail-form  {
+  padding-left: 20px;
+padding-top: 10px; 
+}
 .store-address {
 width:25%; /*поменять на px*/
 font-weight:700;
@@ -87,22 +106,18 @@ line-height:24px;
 color:#323232;
 background-color:#fefefe;
 border-radius: 8px;
-
 }
-
 .store-address .contact-description{
 font-weight:400;
 font-size:14px;
 line-height:20px;
 }
-
 .store-address a {
+margin-left: 50px;
 color:#fefefe;
 background-color:#ef5f3f;
 border-radius: 20px;
 }
-
-
 .main-footer {
 font-weight:400;
 font-size:13px;
@@ -111,22 +126,25 @@ color: #e6ebe9;
 background-color:#849d8f;
 }
 
+.footer-social {
+display: flex;
+align-items: 
+}
+
+
 .footer-social a,
 .footer-info a,
-.footer-copyright a{ 
+.footer-copyright a{
 color: #e6ebe9;
 background-color:#849d8f;
 }
-
 .footer-info li:nth-child(1){
 font-weight:700;
 }
-
 .footer-social a:hover{
 color: #323232;
 background-color:#9db1a5;
 }
-
 .footer-info a:hover,
 .footer-info a:focus,
 .footer-copyright a:hover,
@@ -134,16 +152,42 @@ background-color:#9db1a5;
 color: #f6b8af;
 background-color:#849d8f;
 }
-
-button
-/*input  - как указать input только для type="submit"?*/ {
+.htmlacademy-button{
 padding: 10px;
 color:#fefefe;
 background-color:#eb563b;
 border-radius: 20px;
 }
-
-button:hover {
+.htmlacademy-button:hover {
 background-color:#f07962;
 border-radius: 20px;
+}
+
+/*.button { это не нужно в принципе?
+font:inherit;
+text-align:center;
+vertical-align:middle;
+color:#fefefe;
+border-radius: 20px;
+}*/
+
+.item-cards-row {
+display: flex;
+justify-content: row;
+}
+
+.icecream-card {
+width: 267px;
+border: 3px solid blue;
+position: relative;
+text-align: center;
+}
+
+.card-price {
+position: absolute;
+bottom: 45px;
+left: 0px;
+font-size:45px;
+font-weight: bold;
+
 }
