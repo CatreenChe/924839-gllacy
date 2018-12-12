@@ -1,5 +1,5 @@
 body {
-width:1200px; 
+width:1200px;
 height:auto;
 margin: 0;
 font-family: "Roboto", Arial, sans-serif;
@@ -11,20 +11,24 @@ background-color:#849d8f;
 a{
 text-decoration: none;
 }
-
-
 .main-navigation {
+display:flex;
 font-weight:700;
 font-size:16px;
 line-height:18px;
 color:#ffffff;
 }
-
-site-navigation{
-display: flex;
-justify-content: row;
-
+.site-navigation{
+display:inline-flex;
+flex-direction: row;
+justify-content: space-around;
 }
+.user-navigation {
+display: inline-flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
 .site-navigation a,
 .user-navigation a {
 list-style: none;
@@ -37,6 +41,14 @@ color:#ffffff;
 color:#f6b8af;
 background-color:#849d8f;
 }
+
+.breadcrumbs {
+display: flex;
+flex-direction: row;
+width: 250px;
+justify-content: space-around;
+}
+
 .advantages {
 padding:20px 30px 0px 20px;
 font-weight:400;
@@ -51,29 +63,33 @@ font-size:24px;
 line-height:30px;
 }
 
-.advantages-item {
-display: inline-block; /*как правильно тут сделать?*/
-width:48%; /*значение взяла приблизительное*/
-border: 5px solid green; /*для наглядности, потом убрать*/
+
+.flex-conteiner-excellence {
+display:flex;
+flex-direction: row;
+}
+
+.excellence-lead {
+display: flex;
+flex-direction: column;
 }
 
 .blog-newsletter {
-  width:1200px;
-  height:220px;
-  border: 5px solid red; /*для наглядности, потом убрать*/
+width:1200px;
+height:220px;
+border: 5px solid red; /*для наглядности, потом убрать*/
 display: flex;
 justify-content: space-around;
 }
-
 .blog{
 width:560px;
 background-image: url(../img/strawberry-background.jpg);
 background-color:#ffffff;
 font-size:16px;
 line-height:22px;
-border-radius:14px; 
+border-radius:14px;
 padding-left: 20px;
-padding-top: 10px; 
+padding-top: 10px;
 }
 .blog a{
 width:50%; /*почему тект наползает на картинку?*/
@@ -82,9 +98,8 @@ background-color:#ffffff;
 font-size:24px;
 line-height:30px;
 text-decoration: underline;
-
 }
-.newsletter { 
+.newsletter {
 width:560px;
 background-image: url(../img/bg-post.svg);/*как убрать подложку на задний фон? Это же должен быть еще один блок,где лежит только фон?*/
 font-size:16px;
@@ -95,8 +110,8 @@ border-radius:14px;
 border-bottom:5px solid red;
 }
 .newsletter > .newsletter-p, .mail-form  {
-  padding-left: 20px;
-padding-top: 10px; 
+padding-left: 20px;
+padding-top: 10px;
 }
 .store-address {
 width:25%; /*поменять на px*/
@@ -119,19 +134,27 @@ background-color:#ef5f3f;
 border-radius: 20px;
 }
 .main-footer {
-font-weight:400;
+display:-flex;
+justify-content: space-between;
 font-size:13px;
 line-height:18px;
 color: #e6ebe9;
 background-color:#849d8f;
+display:flex;
+width: 1200px;
 }
-
 .footer-social {
-display: flex;
-align-items: 
+display:flex;
+align-items:center;
 }
-
-
+.footer-info {
+display:flex;
+flex-direction:row;
+}
+.flex-conteiner-footer-info {
+display:flex;
+flex-direction: column;
+}
 .footer-social a,
 .footer-info a,
 .footer-copyright a{
@@ -144,6 +167,11 @@ font-weight:700;
 .footer-social a:hover{
 color: #323232;
 background-color:#9db1a5;
+}
+.footer-copyright {
+display:flex;
+flex-direction: column-reverse;
+align-items:center;
 }
 .footer-info a:hover,
 .footer-info a:focus,
@@ -162,7 +190,6 @@ border-radius: 20px;
 background-color:#f07962;
 border-radius: 20px;
 }
-
 /*.button { это не нужно в принципе?
 font:inherit;
 text-align:center;
@@ -170,24 +197,20 @@ vertical-align:middle;
 color:#fefefe;
 border-radius: 20px;
 }*/
-
 .item-cards-row {
 display: flex;
 justify-content: row;
 }
-
 .icecream-card {
 width: 267px;
 border: 3px solid blue;
 position: relative;
 text-align: center;
 }
-
 .card-price {
 position: absolute;
 bottom: 45px;
 left: 0px;
 font-size:45px;
 font-weight: bold;
-
 }

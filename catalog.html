@@ -9,12 +9,12 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="100" height="100" alt="Логотип Глейси">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="сatalog.html">Каталог</a>
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" alt="Логотип Глейси" width="150" height="150">
+      </a>
+      <ul class="site-navigation">
+        <li class="catalog-dropdown">Каталог
           <ul>
             <li><a href="сatalog.html/brand_new">Новинки</a></li>
             <li><a href="сatalog.html/sliv">Сливочное</a></li>
@@ -23,57 +23,53 @@
             <li><a href="сatalog.html/mel">Мелорин</a></li>
           </ul>
         </li>
+        <li><a href="delivery">Доставка и оплата</a></li>
+        <li><a href="about-us">О компании</a></li>
       </ul>
-      <li><a href="delivery">Доставка и оплата</a></li>
-      <li><a href="about-us">О компании</a></li>
-    </ul>
-    <ul class="user-navigation">
-      <li>
-        <a href="button">Поиск</a>
-        <form class="search-form" method="get" action="https:_.ru">
+      <ul class="user-navigation">
+        <li>
+          <a href="button">Поиск</a>
+          <form class="search-form" method="get" action="https:_.ru">
+            <p>
+              <label for="search-input" hidden="">Что ищем?</label>
+              <input type="text" id="search-input" placeholder="Что ищем?">
+            </p>
+          </form>
+        </li>
+        <li><a class="login-link" href="login.html">Вход</a>
+        <form class="login-form" method="get" action="https:_.ru">
           <p>
-            <label for="search-input" hidden="">Что ищем?</label>
-            input
+            <label for="login-user" hidden="">Электронная почта</label>
+            <input type="text" id="login-user" name="login" placeholder="Электронная почта">
           </p>
+          <p>
+            <label for="user-password" hidden="">Пароль</label>
+            <input id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button type="submit">Войти</button>
+          <a class="login-form-link" href="#">Забыли пароль?</a>
+          <a class="login-form-link" href="#">Новая регистрация</a>
         </form>
       </li>
-      <li><a class="login-link" href="login.html">Вход</a>
-      <form class="login-form" method="get" action="https:_.ru">
-        <p>
-          <label for="login-user" hidden="">Электронная почта</label>
-          <input type="text" id="login-user" name="login" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label for="user-password" hidden="">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <button type="submit">Войти</button>
-        <a class="login-form-link" href="#">Забыли пароль?</a>
-        <a class="login-form-link" href="#">Новая регистрация</a>
-      </form>
+      <li><a href="button">Корзинa</a>
+      <div class="basket-form">
+        <table>
+          <tr>
+            <td>Пломбир с апельсиновым джемом</td>
+            <td>1.5 кг</td>
+            <td>300 р.</td>
+          </tr>
+          <tr>
+            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td>1.5 кг</td>
+            <td>450 р.</td>
+          </tr>
+        </table>
+        <a href="Checkout">Оформить заказ</a>
+      </div>
     </li>
-    <li><a href="button">Корзинa</a>
-    <div class="basket-form">
-      <table>
-        <tr>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1.5 кг</td>
-          <td>300 р.</td>
-        </tr>
-        <tr>
-          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1.5 кг</td>
-          <td>450 р.</td>
-        </tr>
-      </table>
-      <a href="Checkout">Оформить заказ</a>
-    </div>
-  </li>
-</ul>
+  </ul>
 </nav>
-<div class="time-work">
-<p>c 10 до 20, ежедневно 8 812 450-25-25</p>
-</div>
 </header>
 <main class="catalog-page">
 <section class="navigation-top">
@@ -163,16 +159,18 @@
   <div><a class="social-button" href="#"><img src="img/vk.svg"></a></div>
 </div>
 <div class="footer-info">
-<ul>
-  <li><a class="info" href="#"><img src="img/heart.svg">Для поставщиков</a></li>
+<ul class="flex-conteiner-footer-info">
+  <li><a class="info" href="#">Для поставщиков</a></li>
   <li><a class="info" href="#">О производстве</a></li>
+</ul>
+  <ul class="flex-conteiner-footer-info">
   <li><a class="info" href="#">Наши документы</a></li>
   <li><a class="info" href="#">Экологические стандарты</a></li>
 </ul>
 </div>
 <div class="footer-copyright">
 <p>Сделано в HTML Academy</p>
-<a class="htmlacademy-button" href="https://htmlacademy.ru">HTML Academy</a>
+<a class="htmlacademy-button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy" width="108" height="39"></a>
 </div>
 </footer>
 </body>
