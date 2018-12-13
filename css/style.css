@@ -1,5 +1,4 @@
 body {
-width:1200px;
 height:auto;
 margin: 0;
 font-family: "Roboto", Arial, sans-serif;
@@ -7,39 +6,53 @@ font-size:16px;
 font-weight:500;
 color:#ffffff;
 background-color:#849d8f;
+
 }
 a{
 text-decoration: none;
 }
+
+.container, /*этот контейнер подходит для задания ширины страницы? (хедер в него не входит)*/
+.catalog-page, /*cтраница не подстроилась потому что задана ширина кап*/
+.inner-page { /*cтраница с каталогом по макету попадает вся в контейнер? здесь у все равно выпадает футер*/
+width: 1146px;
+} 
+
+.catalog-page {
+ border: 2px solid red; /*для наглядности, потом убрать*/
+}
+
+.inner-page {
+ border: 2px solid black; /*для наглядности, потом убрать*/
+}
+
 .main-navigation {
 display:flex;
+flex-wrap:wrap;
 font-weight:700;
 font-size:16px;
 line-height:18px;
 color:#ffffff;
+justify-content:space-around;
+
 }
 .site-navigation{
 display:inline-flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: flex-start;
+
 }
 .user-navigation {
 display: inline-flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: flex-end;
+
 }
 
 .site-navigation a,
 .user-navigation a {
 list-style: none;
 color:#ffffff;
-}
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-color:#f6b8af;
-background-color:#849d8f;
 }
 
 .breadcrumbs {
@@ -49,8 +62,17 @@ width: 250px;
 justify-content: space-around;
 }
 
+.site-navigation a:focus,
+.user-navigation a:focus,
+.breadcrumbs a:focus,
+.site-navigation a:hover,
+.user-navigation a:hover,
+.breadcrumbs a:hover {
+color:#f6b8af;
+}
+
 .advantages {
-padding:20px 30px 0px 20px;
+background-image: url(../img/waffles-background.svg);
 font-weight:400;
 font-size:16px;
 line-height:22px;
@@ -58,14 +80,14 @@ color:#323232;
 background-color:#ffffff;
 border-radius:14px;
 }
+
 .advantages .specification-shop {
 font-size:24px;
 line-height:30px;
 }
 
-
-.flex-conteiner-excellence {
-display:flex;
+.excellence {
+display: flex;
 flex-direction: row;
 }
 
@@ -75,37 +97,37 @@ flex-direction: column;
 }
 
 .blog-newsletter {
-width:1200px;
-height:220px;
-border: 5px solid red; /*для наглядности, потом убрать*/
+width:auto;
+border: 1px solid red; /*для наглядности, потом убрать*/
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 }
 .blog{
-width:560px;
+/*width:560px;*/
 background-image: url(../img/strawberry-background.jpg);
 background-color:#ffffff;
 font-size:16px;
 line-height:22px;
 border-radius:14px;
-padding-left: 20px;
-padding-top: 10px;
+/*padding-left: 20px;
+padding-top: 10px;*/
+border: 1px solid green; /*для наглядности, потом убрать*/
 }
 .blog a{
-width:50%; /*почему тект наползает на картинку?*/
 color:#323232;
 background-color:#ffffff;
 font-size:24px;
 line-height:30px;
 text-decoration: underline;
+
 }
 .newsletter {
-width:560px;
-background-image: url(../img/bg-post.svg);/*как убрать подложку на задний фон? Это же должен быть еще один блок,где лежит только фон?*/
+/*width:560px;*/
+border-image: url(../img/bg-post.svg)5 round round; /*рамка только с одной стороны видна*/
+background-color:#f8f7f4;
 font-size:16px;
 line-height:22px;
 color: #5a5a5a;
-background-color:#f8f7f4;
 border-radius:14px;
 border-bottom:5px solid red;
 }
@@ -114,7 +136,7 @@ padding-left: 20px;
 padding-top: 10px;
 }
 .store-address {
-width:25%; /*поменять на px*/
+width:25%; /*исправить*/
 font-weight:700;
 font-size:18px;
 line-height:24px;
@@ -134,7 +156,7 @@ background-color:#ef5f3f;
 border-radius: 20px;
 }
 .main-footer {
-display:-flex;
+display:flex;
 justify-content: space-between;
 font-size:13px;
 line-height:18px;
@@ -173,10 +195,11 @@ display:flex;
 flex-direction: column-reverse;
 align-items:center;
 }
-.footer-info a:hover,
+
 .footer-info a:focus,
-.footer-copyright a:hover,
-.footer-copyright a:focus {
+.footer-copyright a:focus,
+.footer-info a:hover,
+.footer-copyright a:hover {
 color: #f6b8af;
 background-color:#849d8f;
 }
@@ -202,15 +225,21 @@ display: flex;
 justify-content: row;
 }
 .icecream-card {
-width: 267px;
+width: 267px; /*если я прописываю это ширину, это нормально? 267*4=948 =потом будут отступы*/
 border: 3px solid blue;
 position: relative;
 text-align: center;
 }
 .card-price {
-position: absolute;
+/*position: absolute; убрать, настраиваем с пом сеток*/
 bottom: 45px;
 left: 0px;
 font-size:45px;
 font-weight: bold;
+}
+
+.basket-form,
+.search-form,
+.login-form {
+  display: none;
 }
