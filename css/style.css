@@ -1,31 +1,30 @@
 body {
-height:auto;
+/*height*/
+width:1200px;
 margin: 0;
 font-family: "Roboto", Arial, sans-serif;
 font-size:16px;
+line-height: 1.5;
 font-weight:500;
 color:#ffffff;
 background-color:#849d8f;
-
 }
 a{
 text-decoration: none;
 }
-
-.container, /*этот контейнер подходит для задания ширины страницы? (хедер в него не входит)*/
-.catalog-page, /*cтраница не подстроилась потому что задана ширина кап*/
-.inner-page { /*cтраница с каталогом по макету попадает вся в контейнер? здесь у все равно выпадает футер*/
-width: 1146px;
-} 
-
-.catalog-page {
- border: 2px solid red; /*для наглядности, потом убрать*/
-}
-
+.container,
+.catalog-page,
 .inner-page {
- border: 2px solid black; /*для наглядности, потом убрать*/
+width: 1146px;
+margin: 0 auto;
+padding: 10px;
 }
-
+.catalog-page {
+border: 2px solid red; /*для наглядности, потом убрать*/
+}
+.inner-page {
+border: 2px solid black; /*для наглядности, потом убрать*/
+}
 .main-navigation {
 display:flex;
 flex-wrap:wrap;
@@ -33,35 +32,26 @@ font-weight:700;
 font-size:16px;
 line-height:18px;
 color:#ffffff;
-justify-content:space-around;
-
+justify-content:space-between;
 }
 .site-navigation{
 display:inline-flex;
 flex-direction: row;
-justify-content: flex-start;
-
 }
 .user-navigation {
 display: inline-flex;
-flex-direction: row;
 justify-content: flex-end;
-
 }
-
 .site-navigation a,
 .user-navigation a {
 list-style: none;
 color:#ffffff;
 }
-
 .breadcrumbs {
 display: flex;
-flex-direction: row;
 width: 250px;
-justify-content: space-around;
+justify-content: space-between;
 }
-
 .site-navigation a:focus,
 .user-navigation a:focus,
 .breadcrumbs a:focus,
@@ -70,7 +60,6 @@ justify-content: space-around;
 .breadcrumbs a:hover {
 color:#f6b8af;
 }
-
 .advantages {
 background-image: url(../img/waffles-background.svg);
 font-weight:400;
@@ -80,38 +69,31 @@ color:#323232;
 background-color:#ffffff;
 border-radius:14px;
 }
-
 .advantages .specification-shop {
 font-size:24px;
 line-height:30px;
 }
-
-.excellence {
-display: flex;
-flex-direction: row;
-}
-
-.excellence-lead {
-display: flex;
-flex-direction: column;
-}
-
+.excellence { /*если делаю одним списком, не получается два столбца текста*/
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+}/*если список обернуть еще в div, тоже ничего не меняется. Фон все равно разбивается на два блока.почему?*/
 .blog-newsletter {
 width:auto;
-border: 1px solid red; /*для наглядности, потом убрать*/
+border: 1px dashed red; /*для наглядности, потом убрать*/
 display: flex;
 justify-content: space-between;
 }
 .blog{
-/*width:560px;*/
+width:48.9%;
 background-image: url(../img/strawberry-background.jpg);
 background-color:#ffffff;
 font-size:16px;
 line-height:22px;
 border-radius:14px;
-/*padding-left: 20px;
-padding-top: 10px;*/
-border: 1px solid green; /*для наглядности, потом убрать*/
+border-width: 5px;
+border-style: solid;
+border:1px dashed green;/*для наглядности, потом убрать*/
 }
 .blog a{
 color:#323232;
@@ -119,24 +101,30 @@ background-color:#ffffff;
 font-size:24px;
 line-height:30px;
 text-decoration: underline;
-
 }
 .newsletter {
-/*width:560px;*/
-border-image: url(../img/bg-post.svg)5 round round; /*рамка только с одной стороны видна*/
+width:48.9%;
+border-image: url(../img/bg-post.svg);
+border-image-repeat: round;
+border-image-width:10px 10px; /*не понимаю, как задать рамку со всех сторон. Задано со всех сторон же. 
+ теперь она вообще пропала*/
 background-color:#f8f7f4;
 font-size:16px;
-line-height:22px;
+line-height:22pxborder:1px dashed blue;
 color: #5a5a5a;
 border-radius:14px;
-border-bottom:5px solid red;
+border:1px dashed blue; /*для наглядности, потом убрать*/
 }
 .newsletter > .newsletter-p, .mail-form  {
 padding-left: 20px;
 padding-top: 10px;
 }
 .store-address {
-width:25%; /*исправить*/
+display:inline-flex;
+flex-direction:column;
+justify-content:flex-end;
+/*align-self: flex-end;*/ /*почему не выравнивается по правой стороне,*/
+padding: 20px;
 font-weight:700;
 font-size:18px;
 line-height:24px;
@@ -181,7 +169,6 @@ flex-direction: column;
 .footer-info a,
 .footer-copyright a{
 color: #e6ebe9;
-background-color:#849d8f;
 }
 .footer-info li:nth-child(1){
 font-weight:700;
@@ -195,7 +182,6 @@ display:flex;
 flex-direction: column-reverse;
 align-items:center;
 }
-
 .footer-info a:focus,
 .footer-copyright a:focus,
 .footer-info a:hover,
@@ -225,7 +211,7 @@ display: flex;
 justify-content: row;
 }
 .icecream-card {
-width: 267px; /*если я прописываю это ширину, это нормально? 267*4=948 =потом будут отступы*/
+width: 267px;
 border: 3px solid blue;
 position: relative;
 text-align: center;
@@ -237,9 +223,8 @@ left: 0px;
 font-size:45px;
 font-weight: bold;
 }
-
 .basket-form,
 .search-form,
 .login-form {
-  display: none;
+display: none;
 }
