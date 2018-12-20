@@ -210,16 +210,47 @@ color: #e6ebe9;
 background-color:#849d8f;
 display:flex;
 }
+
 .footer-social {
 display:flex;
 align-items:center;
+width: 200px;
+
 }
-.social-button {
-display: block;
-margin-right: 15px;
-margin-left: 3px;
-/*color:#D9E0DC;цвет ободка вокруг кнопки*/
+.social-button{
+display: inline-block;
+height: 32px;
+width: 32px;
+margin: 10px;
+
+border-radius: 50%;
+box-shadow: 0 0 0 3px rgba(255,255,255,.6),inset 0 0 0 1px rgba(255,255,255,.6);
+opacity: 0.8;
 }
+.social-button:hover {
+  opacity: 1;
+  box-shadow: 0 0 0 4px rgba(255,255,255,.7),inset 0 0 0 1px rgba(255,255,255,.6);
+
+}
+
+#twitter {
+background-image: url(../img/twitter.svg);
+}
+
+#instagram {
+  background-image: url(../img/instagram.svg);
+}
+
+#fb {
+  background-image: url(../img/fb.svg);
+}
+
+#vk {
+  background-image: url(../img/vk.svg);
+}
+
+
+
 .footer-info {
 display: flex;
 flex-direction:row;
