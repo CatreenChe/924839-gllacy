@@ -13,7 +13,7 @@
           <img src="img/logo.svg" alt="Логотип Глейси" width="150" height="150">
         </a>
         <ul class="site-navigation">
-          <li class="catalog-dropdown">Каталог
+          <li><a href="catalog-dropdown">Каталог</a>
             <ul class="catalog-dropdown-items">
               <li><a href="сatalog.html/brand_new">Новинки</a></li>
               <li><a href="сatalog.html/sliv">Сливочное</a></li>
@@ -25,9 +25,9 @@
           <li><a href="delivery">Доставка и оплата</a></li>
           <li><a href="about-us">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
+       <ul class="user-navigation">
           <li>
-            <a href="button">Поиск</a>
+          <a class="button-search" href="search.html"><!--Поиск--></a> <!--при скрытом или удаленном "поиск" съзжает наведение на ссылку. если оставить и "поиск", и лупу, все норм. что не так?-->
             <form class="search-form" method="get" action="https:_.ru">
               <p>
                 <label for="search-input" hidden="">Что ищем?</label>
@@ -50,7 +50,7 @@
             <a class="login-form-link" href="#">Новая регистрация</a>
           </form>
         </li>
-        <li><a href="button">Корзинa</a>
+        <li><a class="cart-button" href="catr.html">Пусто</a>
         <div class="basket-form">
           <table>
             <tr>
@@ -71,90 +71,89 @@
   </nav>
 </header>
 </div>
-<main class="container"> <!-- по нему задаем ширину контeйнера или по стр 9?-->
+<main class="container">
 <h1 class="visually-hidden">Главная страница</h1>
 <section class="advantages">
-<h2 class="visually-hidden">Преимущества</h2>
-<p class="specification-shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-<ul class="excellence">
-  <li><img src="img/ice-cream.svg" alt="Иконка мороженого">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-  <li><img src="img/eco.svg" alt="Иконка эко-продукта">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
-  <li><img src="img/cow.svg" alt="Иконка корова">Закупка ингредиентов  производится только у проверенныхфермерских хозяйств и компаний, с которыми нас связываетдолговременное сотрудничество.</li>
-  <li><img src="img/thermometer.svg" alt="Иконка термометр">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-</ul>
+  <h2 class="visually-hidden">Преимущества</h2>
+  <p class="specification-shop">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+  <ul class="excellence">
+    <li><img src="img/ice-cream.svg" alt="Иконка мороженого">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+    <li><img src="img/eco.svg" alt="Иконка эко-продукта">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
+    <li><img src="img/cow.svg" alt="Иконка корова">Закупка ингредиентов  производится только у проверенныхфермерских хозяйств и компаний, с которыми нас связываетдолговременное сотрудничество.</li>
+    <li><img src="img/thermometer.svg" alt="Иконка термометр">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+  </ul>
 </section>
 <div class="blog-newsletter">
-<section class="blog">
-  <h3>Новое в нашем блоге</h3>
-  <a href="blog.html">10 способов сервировки фруктовых шербетов к столу
-  </a>
-</section>
-<section class="newsletter">
-  <p class="newsletter-p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-  <form class="mail-form" method="get" action="https:_.ru">
-    <label for="input" hidden="user-mail">Электронная почта</label>
-    <input type="text" id="user-mail" placeholder="Электронная почта">
-    <input type="submit" value="Отправить">
-  </form>
-</section>
+  <section class="blog">
+    <h3>Новое в нашем блоге</h3>
+    <a href="blog.html">10 способов сервировки фруктовых шербетов к столу
+    </a>
+  </section>
+  <section class="newsletter">
+    <p class="newsletter-p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <form class="mail-form" method="get" action="https:_.ru">
+      <label for="input" hidden="user-mail">Электронная почта</label>
+      <input type="text" id="user-mail" placeholder="Электронная почта">
+      <input type="submit" value="Отправить">
+    </form>
+  </section>
 </div>
 </main>
-
 <figure class="map">
 <p><img src="img/map.svg" alt="Карта с адресом"></p>
-<div class="container-address">
-<div class="store-address" method="get" action="https:_.ru">
-<p class="contact-description">Адрес главного офиса и онлайн магазина</p>
-<p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-<p class="contact-description">для заказов по телефону:</p>
-<p>8 812 450-25-25</p>
-<p class="contact-description">(с 10 до 20 часов)</p>
-<a class="feedback-form" href="#">Форма обратной связи</a>
-</div>
+<div class="container container-address">
+  <div class="store-address" method="get" action="https:_.ru">
+    <p class="contact-description">Адрес главного офиса и онлайн магазина</p>
+    <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+    <p class="contact-description">для заказов по телефону:</p>
+    <p>8 812 450-25-25</p>
+    <p class="contact-description">(с 10 до 20 часов)</p>
+    <a class="feedback-form" href="#">Форма обратной связи</a>
+  </div>
 </div>
 </figure>
 <div class="contact-form">
 <form class="search-form" method="get" action="https:_.ru">
-<h3>Мы обязательно вам ответим!</h3>
-<p>
-  <label for="input" hidden="user-name">Как вас зовут?</label>
-  <input type="text" id="user-name" placeholder="Как вас зовут?">
-</p>
-<p>
-  <label for="input" hidden="user-mail">Ваша почта для ответа?</label>
-  <input type="text" id="user-mail" placeholder="Ваша почта для ответа?">
-</p>
-<p>
-  <label for="input" hidden="user-message">Напишите что-нибудь</label>
-  <textarea type="text" id="user-message" rows="2" placeholder="Напишите что-нибудь..."
-  required></textarea>
-</p>
-<button type="submit">Отправить</button>
+  <h3>Мы обязательно вам ответим!</h3>
+  <p>
+    <label for="input" hidden="user-name">Как вас зовут?</label>
+    <input type="text" id="user-name" placeholder="Как вас зовут?">
+  </p>
+  <p>
+    <label for="input" hidden="user-mail">Ваша почта для ответа?</label>
+    <input type="text" id="user-mail" placeholder="Ваша почта для ответа?">
+  </p>
+  <p>
+    <label for="input" hidden="user-message">Напишите что-нибудь</label>
+    <textarea type="text" id="user-message" rows="2" placeholder="Напишите что-нибудь..."
+    required></textarea>
+  </p>
+  <button type="submit">Отправить</button>
 </form>
-<input type="button" id="cancel_edit" value="Закрыть"></input>
+<button type="submit">Закрыть</button>
 </div>
 </main>
 <div class="container">
 <footer class="main-footer">
 <div class="footer-social">
-<div><a class="social-button" href="#"><img src="img/twitter.svg"></a></div>
-<div><a class="social-button" href="#"><img src="img/instagram.svg"></a></div>
-<div><a class="social-button" href="#"><img src="img/fb.svg"></a></div>
-<div><a class="social-button" href="#"><img src="img/vk.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/twitter.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/instagram.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/fb.svg"></a></div>
+  <div><a class="social-button" href="#"><img src="img/vk.svg"></a></div>
 </div>
 <div class="footer-info">
-<ul class="flex-conteiner-footer-info">
-  <li><a class="info" href="#">Для поставщиков</a></li>
-  <li><a class="info" href="#">О производстве</a></li>
-</ul>
-<ul class="flex-conteiner-footer-info">
-  <li><a class="info" href="#">Наши документы</a></li>
-  <li><a class="info" href="#">Экологические стандарты</a></li>
-</ul>
+  <ul class="flex-conteiner-footer-info">
+    <li><a class="info" href="#">Для поставщиков</a></li>
+    <li><a class="info" href="#">О производстве</a></li>
+  </ul>
+  <ul class="flex-conteiner-footer-info">
+    <li><a class="info" href="#">Наши документы</a></li>
+    <li><a class="info" href="#">Экологические стандарты</a></li>
+  </ul>
 </div>
 <div class="footer-copyright">
-<p>Сделано в HTML Academy</p>
-<a class="htmlacademy-button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy" width="108" height="39"></a>
+  <p>Сделано в HTML Academy</p>
+  <a class="htmlacademy-button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy" width="108" height="39"></a>
 </div>
 </footer>
 </div>
