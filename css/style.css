@@ -137,6 +137,10 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 }
+.excellence li {
+  width: 50%;
+  list-style-type: none;
+}
 .blog-newsletter {
 display: flex;
 justify-content: space-between;
@@ -162,14 +166,14 @@ text-decoration: underline;
 width: 48.8%;
 height: 200px;
 background-color: #f8f7f4;;
-border-radius: 15px;
+border-radius: 10px;
 border-width: 5px; /*при подстановке др.значений толщина рамки не меняется, потому что это подложка? как уеньшить толщину тогда?*/
 border-style: solid;
 border-color: lightblue;
 border-image: url(https://htmlacademy-htmlcss.github.io/924839-gllacy/5/img/bg-post.svg);
 border-image-repeat: stretch stretch;
 border-image-slice: 15;
-border-image-width: 10px;
+border-image-width: 6px;
 color: #5a5a5a;
 }
 .newsletter > .newsletter-p, .mail-form  {
@@ -236,58 +240,66 @@ opacity: 0.8;
 #twitter {
 background-image: url(../img/twitter.svg);
 }
-
 #instagram {
   background-image: url(../img/instagram.svg);
 }
-
 #fb {
   background-image: url(../img/fb.svg);
 }
-
 #vk {
   background-image: url(../img/vk.svg);
 }
 
-
-
 .footer-info {
 display: flex;
-flex-direction:row;
 flex-wrap:wrap;
-background-color: green; /*убрать*/
-max-width: 370px;
+max-width: 400px;
+font-weight: 400;
 }
-.flex-conteiner-footer-info{
+
+.flex-container-footer-info{
 display: flex;
 flex-direction:row;
 flex-wrap:wrap;
-background-color: red;/*убрать*/
+position: relative;
 }
-.info {
+
+.flex-container-footer-info li {
 width: 50%;
+list-style-type: none;
 }
+
+#heart {
+  font-weight: 700;
 }
-.flex-conteiner-footer-info {
-display:flex;
-flex-direction: column;
+#heart::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  top: 2px;
+  left: 16px;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
+
+
+
 .footer-social a,
 .footer-info a,
 .footer-copyright a{
 color: #ffffff;
 }
-.footer-info li:nth-child(1){
-font-weight:700;
-}
-}
+
+
 .footer-copyright {
 display:flex;
 flex-direction: column-reverse;
 align-items:center;
 }
 .footer-info a:focus,
-.footer-copyright a:focus,s
+.footer-copyright a:focus,
 .footer-info a:hover,
 .footer-copyright a:hover {
 color: #f6b8af;
@@ -295,7 +307,6 @@ color: #f6b8af;
 .htmlacademy-button{
 padding: 10px;
 color:#fefefe;
-background-color:#eb563b;
 border-radius: 20px;
 }
 .htmlacademy-button:hover {
