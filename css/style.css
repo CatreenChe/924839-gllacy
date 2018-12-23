@@ -41,7 +41,7 @@ padding: 0;
 display:flex;
 flex-wrap: wrap;
 width: 400px;
-margin-right: auto; 
+margin-right: auto;
 }
 .user-navigation {
 display:inline-flex;
@@ -68,7 +68,6 @@ background-position: 0 0;
 background-image: url(../img/loupe-white.svg);
 top: 12px;
 left: 14px;
-
 }
 .login-link::before {
 background-image: url(../img/entrance-white.svg);
@@ -89,7 +88,7 @@ background-color: rgba(255,255,255,.2)
 .login-link {
 border-radius:20px;
 background-color: rgba(255,255,255,.2);
-margin-left: 4px; 
+margin-left: 4px;
 }
 .site-navigation {
 text-decoration: underline;
@@ -116,18 +115,16 @@ color:#323232;
 background-color:#ffffff;
 border-radius:20px;
 }
-
 .login-link:hover::before {
 background-image: url(../img/entrance.svg);
 }
-.button-search:hover::before 
+.button-search:hover::before
 background-image: url(../img/loupe.svg);
- /*из фотошопа экспорт.белая иконка. как поменять цвет?*/
+/*из фотошопа экспорт.белая иконка. как поменять цвет?*/
 }
 .cart-button:hover::before {
 background-image: url(../img/basket-red.svg);
 }
-
 .advantages {
 background-image: url(../img/waffles-background.svg);
 font-weight:400;
@@ -232,37 +229,50 @@ color:#fefefe;
 background-color:#ef5f3f;
 border-radius: 20px;
 }
-
-
 .item-cards-row {
 display:inline-flex;
 }
-
 .icecream-card{
 display: block;
-width: 267px;
-height:500px; /*нужно 330, но текст вываливается*/
+width: 290px;
+height:330px;
+padding: 7px 15px;
 position: relative;
 margin-bottom: 40px;
 text-align: center;
-/*background-color: pink;*/
-border: 1px solid blue;
+}
+.icecream-card:hover { /*как разместить сверху? сейчас ховер сдвигает вниз нижние карточки*/
+width: 290px;
+height:400px;
+position: relative;
+background-color: #9bafa3;
+border-radius: 5px;
+padding: 7px 15px;
+
 }
 
 .card-name {
 display: flex;
 text-decoration: underline;
-padding-bottom:10px;
+position: relative;
+top: -150px;
 }
 
-
 .card-price {
+display: flex;
 position: relative;
 top: -120px;
 text-align:left;
 font-size:45px;
 font-weight: bold;
 }
+
+.icecream-card img {
+width: 100%;
+margin: 0px;
+border-radius: 60%;
+}
+
 
 
 
@@ -360,6 +370,7 @@ border-radius: 20px;
 .htmlacademy-button:hover {
 background-color:#f07962;
 border-radius: 20px;
+
 }
 /*.button { это не нужно в принципе?
 font:inherit;
@@ -372,10 +383,6 @@ border-radius: 20px;
 display: flex;
 justify-content: row;
 }
-
-
-
-
 .catalog-dropdown-items,
 .basket-form,
 .contact-form,
