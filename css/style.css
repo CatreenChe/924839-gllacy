@@ -16,7 +16,6 @@ width: 1146px;
 margin: 0 auto;
 padding: 10px;
 }
-}
 .catalog-page {
 border: 2px solid red; /*для наглядности, потом убрать*/
 }
@@ -42,6 +41,7 @@ padding: 0;
 display:flex;
 flex-wrap: wrap;
 width: 400px;
+margin-right: auto; 
 }
 .user-navigation {
 display:inline-flex;
@@ -65,13 +65,16 @@ background-repeat: no-repeat;
 background-position: 0 0;
 }
 .button-search::before{
-background-image: url(../img/loupe.svg);
+background-image: url(../img/loupe-white.svg);
 top: 12px;
-left: 14px;}
+left: 14px;
+
+}
 .login-link::before {
-background-image: url(../img/entrance.svg);
+background-image: url(../img/entrance-white.svg);
 top: 11px;
-left: 6px;}
+left: 6px;
+}
 .cart-button::before {
 background-image: url(../img/basket.svg);
 top: 10px;
@@ -86,7 +89,7 @@ background-color: rgba(255,255,255,.2)
 .login-link {
 border-radius:20px;
 background-color: rgba(255,255,255,.2);
-margin-left: 4px; /*когда задаю маргины  и паддинги, кнопки съезжают вниз*/
+margin-left: 4px; 
 }
 .site-navigation {
 text-decoration: underline;
@@ -113,9 +116,18 @@ color:#323232;
 background-color:#ffffff;
 border-radius:20px;
 }
+
+.login-link:hover::before {
+background-image: url(../img/entrance.svg);
+}
+.button-search:hover::before 
+background-image: url(../img/loupe.svg);
+ /*из фотошопа экспорт.белая иконка. как поменять цвет?*/
+}
 .cart-button:hover::before {
 background-image: url(../img/basket-red.svg);
 }
+
 .advantages {
 background-image: url(../img/waffles-background.svg);
 font-weight:400;
@@ -202,12 +214,12 @@ display: flex;
 justify-content: flex-end;
 }
 .store-address {
-padding: 20px;
 font-weight:700;
 font-size:18px;
 line-height:24px;
 color:#323232;
 background-color:#fefefe;
+padding: 20px;
 }
 .store-address .contact-description{
 font-weight:400;
@@ -220,6 +232,42 @@ color:#fefefe;
 background-color:#ef5f3f;
 border-radius: 20px;
 }
+
+
+.item-cards-row {
+display:inline-flex;
+}
+
+.icecream-card{
+display: block;
+width: 267px;
+height:500px; /*нужно 330, но текст вываливается*/
+position: relative;
+margin-bottom: 40px;
+text-align: center;
+/*background-color: pink;*/
+border: 1px solid blue;
+}
+
+.card-name {
+display: flex;
+text-decoration: underline;
+padding-bottom:10px;
+}
+
+
+.card-price {
+position: relative;
+top: -120px;
+text-align:left;
+font-size:45px;
+font-weight: bold;
+}
+
+
+
+
+
 .main-footer {
 display:flex;
 justify-content: space-between;
@@ -227,7 +275,6 @@ font-size:13px;
 line-height:18px;
 color: #e6ebe9;
 background-color:#849d8f;
-display:flex;
 }
 .footer-social {
 display:flex;
@@ -281,13 +328,13 @@ font-weight: 700;
 #heart::before {
 content: "";
 position: absolute;
+background-image: url(../img/heart.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
 width: 15px;
 height: 13px;
 top: 2px;
 left: 16px;
-background-image: url(../img/heart.svg);
-background-repeat: no-repeat;
-background-position: 0 0;
 }
 .footer-social a,
 .footer-info a,
@@ -325,18 +372,10 @@ border-radius: 20px;
 display: flex;
 justify-content: row;
 }
-.icecream-card {
-width: 267px;
-border: 3px solid blue;
-position: relative;
-text-align: center;
-}
-.card-price {
-bottom: 45px;
-left: 0px;
-font-size:45px;
-font-weight: bold;
-}
+
+
+
+
 .catalog-dropdown-items,
 .basket-form,
 .contact-form,
