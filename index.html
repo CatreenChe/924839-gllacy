@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <title>Магазин вкусного мороженого Глейси</title>
@@ -27,8 +28,8 @@
       </ul>
       <ul class="user-navigation">
         <li>
-          <a class="button-search" href="search.html"></a>
-          <form class="search-form" method="get" action="https:_.ru">
+          <a class="button-search" href="http://search.html"></a>
+          <form class="search-form" method="get" action="http://search.html">
             <p>
               <label for="search-input" hidden="">Что ищем?</label>
               <input type="text" id="search-input" placeholder="Что ищем?">
@@ -36,8 +37,8 @@
           </form>
         </li>
         <li>
-          <a class="login-link" href="login.html">Вход</a>
-          <form class="login-form" method="get" action="https:_.ru">
+          <a class="login-link" href="http://search.html">Вход</a>
+          <form class="login-form" method="get" action="http://search.html">
             <p>
               <label for="login-user" hidden="">Электронная почта</label>
               <input type="text" id="login-user" name="login" placeholder="Электронная почта">
@@ -83,6 +84,7 @@
     <li class="about-us-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
     
     <li class="about-us-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+  </ul>
   </section>
   <div class="blog-newsletter">
     <section class="blog">
@@ -92,18 +94,17 @@
     </section>
     <section class="newsletter">
       <p class="newsletter-p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="mail-form" method="get" action="https:_.ru">
-        <label for="input" hidden="user-mail">Электронная почта</label>
+      <form class="mail-form" method="get" action="http://search.html">
+        <label for="user-mail">Электронная почта</label>
         <input type="text" id="user-mail" placeholder="Электронная почта">
         <input type="submit" value="Отправить">
       </form>
     </section>
   </div>
-</main>
 <figure class="map">
   <p><img src="img/map.svg" alt="Карта с адресом"></p>
   <div class="container container-address">
-    <div class="store-address" method="get" action="https:_.ru">
+    <div class="store-address">
       <p class="contact-description">Адрес главного офиса и онлайн магазина</p>
       <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
       <p class="contact-description">для заказов по телефону:</p>
@@ -114,19 +115,19 @@
   </div>
 </figure>
 <div class="contact-form">
-  <form class="search-form" method="get" action="https:_.ru">
+  <form class="search-form" method="get" action="http://search.html">
     <h3>Мы обязательно вам ответим!</h3>
     <p>
-      <label for="input" hidden="user-name">Как вас зовут?</label>
+      <label for="user-name">Как вас зовут?</label>
       <input type="text" id="user-name" placeholder="Как вас зовут?">
     </p>
     <p>
-      <label for="input" hidden="user-mail">Ваша почта для ответа?</label>
-      <input type="text" id="user-mail" placeholder="Ваша почта для ответа?">
+      <label for="user-response-mail">Ваша почта для ответа?</label>
+      <input type="text" id="user-response-mail" placeholder="Ваша почта для ответа?">
     </p>
     <p>
-      <label for="input" hidden="user-message">Напишите что-нибудь</label>
-      <textarea type="text" id="user-message" rows="2" placeholder="Напишите что-нибудь..."
+      <label for="user-message">Напишите что-нибудь</label>
+      <textarea id="user-message" rows="2" placeholder="Напишите что-нибудь..."
       required></textarea>
     </p>
     <button type="submit">Отправить</button>
