@@ -51,7 +51,7 @@ max-width: 400px;
 .user-navigation .login-link,
 .user-navigation .button-search,
 .user-navigation .cart-button {
-position: relative;
+position: absolute; /*у меня стоял relative*/
 padding-left: 30px;
 }
 .button-search::before,
@@ -90,6 +90,8 @@ border-radius:20px;
 background-color: rgba(255,255,255,.2);
 margin-left: 4px;
 }
+
+
 .site-navigation a,
 .user-navigation a {
 color:#ffffff;
@@ -122,6 +124,114 @@ background-image: url(../img/loupe.svg);
 }
 .cart-button:hover::before {
 background-image: url(../img/basket-red.svg);
+}
+
+
+
+/*.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 55px;
+  margin-left: 5px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  background: none;
+  border:none;
+}
+
+.max-price {
+  text-align: right;
+}*/
+
+
+
+
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+}
+
+.range-filter {
+  width: 215px;
+  margin-top: 7px;
+}
+
+.filter-item legend {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: inherit;
+}
+
+.range-controls {
+  position: relative;
+  height: 20px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#a8bab0;
+  border-radius: 14px;
+}
+.range-controls .scale {
+  height: 4px;
+  background:#d1dad3;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 4px;
+  background: #ffffff;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-controls .toggle-max {
+  left: 142px;
+}
+.range-controls .toggle-min {
+  left: 44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 .advantages {
 background-image: url(../img/waffles-background.svg);
@@ -283,9 +393,8 @@ display: flex;
 text-decoration: underline;
 position: relative;
 text-align: center;
-margin: 0px;
-/*если ширину не задавать, то наим.первого товара в три строчки получается +  Расстояние до кнопки съезжает.
-С заданной шириной не получается выставить по центру карточки*/
+margin-top: -40px;
+
 }
 .card-price {
 display: flex;
@@ -300,6 +409,18 @@ width: 100%;
 margin: 0px;
 border-radius: 60%;
 }
+
+.filter-form-fat {
+list-style-type: none;
+}
+
+
+.filter-form-fillers {
+list-style-type: none;
+}
+
+
+
 .main-footer {
 display:flex;
 justify-content: space-between;
