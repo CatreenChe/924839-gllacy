@@ -606,26 +606,42 @@ a {
 
 .map {
   margin: 0;
+  min-width: 1200px;
+  margin-left: -10px;
+  position: relative;
 }
 
 .container-address {
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  right: 27px;
+  top: 62px;
+  border-radius: 14px;
+  background-color: #fefefe;
+  max-width: 300px;
+  min-height: 300px;
 }
 
 .store-address {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
   color: #323232;
-  background-color: #fefefe;
-  padding: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
-.store-address .contact-description {
+.store-address .address-small {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+}
+
+.store-address .address-big {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 5px 0;
 }
 
 .feedback-form {
@@ -636,10 +652,11 @@ a {
 }
 
 .store-address a {
-  margin-left: 50px;
   color: #fefefe;
   background-color: #ef5f3f;
   border-radius: 20px;
+  bottom: 30px;
+  position: absolute;
 }
 
 .item-cards-table {
