@@ -163,6 +163,7 @@ a {
   line-height: 18px;
   color: #ffffff;
   justify-content: space-between;
+  position: relative;
 }
 
 .site-navigation,
@@ -186,6 +187,8 @@ a {
   max-width: 400px;
   font-size: 14px;
   line-height: 16px;
+  position: absolute;
+  right: 0;
 }
 
 .user-navigation li {
@@ -198,21 +201,26 @@ a {
   position: relative;
 }
 
-
-/*.time-tel {
+.time-tel {
   display: flex;
-text-align: right;
-font-weight: 700;
-right: 20px;
-top: 60px;
-color: #fff;
+  text-align: right;
+  font-weight: 700;
+  top: 48px;
+  position: relative;
+  flex-direction: column;
 }
 
-.time-tel p{
-font-size: 14px;
-line-height: 16px;
+.time-tel p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
 }
-*/
+
+.time-tel a {
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
 
 .button-search::before,
 .login-link::before,
@@ -850,6 +858,7 @@ border-radius: 20px;
 
 .catalog-dropdown-items,
 .login-form,
+.search-form,
 .basket-form {
   margin: 0;
   margin-bottom: 20px;
