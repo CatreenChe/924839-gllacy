@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="catalog-body">
   <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
@@ -18,8 +18,9 @@
         </a>
         <ul class="site-navigation">
           <li>
-            <div class="catalog-dropdown"><a class="site-navigation-items" href="catalog.html">Каталог</a>
-              <div class="catalog-dropdown-wrapper">
+            <div class="catalog-dropdown">
+              <a class="site-navigation-items" href="catalog.html">Каталог</a>
+              <div class="dropdown-wrapper">
                 <ul class="catalog-dropdown-items">
                   <li class="catalog-categories"><a href="#">Новинки</a></li>
                   <li class="catalog-categories"><a href="catalog.html">Сливочное</a></li>
@@ -37,55 +38,66 @@
           <li>
             <div class="search-dropdown">
               <a class="user-navigation-item button-search" href="http://search.html"></a>
-              <form class="search-form" method="get" action="http://search.html">
-                <p>
-                  <label for="search-input" hidden="">Что ищем?</label>
+              <div class="dropdown-wrapper">
+                <form class="search-form" method="get" action="http://search.html">
                   <input type="text" id="search-input" placeholder="Что ищем?">
-                </p>
-              </form>
+                </form>
+              </div>
             </div>
           </li>
           <li>
             <div class="login-dropdown">
               <a class="user-navigation-item login-link" href="http://search.html">Вход</a>
-              <form class="login-form" method="get" action="http://search.html">
-                <p>
-                  <label for="login-user" hidden>Электронная почта</label>
-                  <input type="text" id="login-user" name="login" placeholder="Электронная почта">
-                </p>
-                <p>
-                  <label for="user-password" hidden="">Пароль</label>
-                  <input id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <button type="submit">Войти</button>
-                <a class="login-form-link" href="#">Забыли пароль?</a>
-                <a class="login-form-link" href="#">Новая регистрация</a>
-              </form>
+              <div class="dropdown-wrapper">
+                <form class="login-form" method="get" action="http://search.html">
+                  <div class="form-user-container">
+                    <p>
+                      <label for="login-user" hidden="">Электронная почта</label>
+                      <input type="text" id="login-user" name="login" placeholder="Электронная почта">
+                    </p>
+                    <p>
+                      <label for="user-password" hidden="">Пароль</label>
+                      <input id="user-password" type="password" name="password" placeholder="Пароль">
+                    </p>
+                  </div>
+                  <div class="login-actions">
+                    <button type="submit">Войти</button>
+                    <div class="login-form-links">
+                      <a class="login-form-link" href="#">Забыли пароль?</a>
+                      <a class="login-form-link" href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </li>
           <li>
             <div class="cart-dropdown">
-              <a class="user-navigation-item cart-button" href="cart.html">Пусто</a>
-              <div class="basket-form">
-                <table>
-                  <tr>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1.5 кг</td>
-                    <td>300 р.</td>
-                  </tr>
-                  <tr>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1.5 кг</td>
-                    <td>450 р.</td>
-                  </tr>
-                </table>
-                <a href="Checkout">Оформить заказ</a>
+              <a class="user-navigation-item cart-button" href="cart.html">2 товара</a>
+              <div class="dropdown-wrapper">
+                <div class="basket-form">
+                  <table>
+                    <tr>
+                      <td class="cart-delete"></td>
+                      <td>Пломбир с апельсиновым джемом</td>
+                      <td>1.5 кг</td>
+                      <td>300 р.</td>
+                    </tr>
+                    <tr>
+                      <td class="cart-delete"></td>
+                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td>1.5 кг</td>
+                      <td>450 р.</td>
+                    </tr>
+                  </table>
+                  <a href="Checkout">Оформить заказ</a>
+                </div>
               </div>
             </div>
           </li>
         </ul>
         <div class="time-tel">
-          <p class="time">с 10 до 20, ежедневно</p>
+          <p class="time">С 10 до 20, ежедневно</p>
           <a class="telephone" href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </nav>

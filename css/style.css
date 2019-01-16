@@ -274,6 +274,7 @@ a {
   text-decoration: underline;
   padding: 10px 14px;
   color: #ffffff;
+  border-radius: 15px;
 }
 
 .user-navigation-item {
@@ -291,16 +292,12 @@ a {
 
 .site-navigation-items:focus,
 .site-navigation-items:hover {
-  border-radius: 15px;
   color: #323232;
   background-color: #ffffff;
 }
 
-.site-navigation-items--active {
-  padding: 7px;
-  border-radius: 15px;
+.catalog-body .catalog-dropdown .site-navigation-items {
   background-color: #d07058;
-  color: #323232;
 }
 
 .breadcrumbs {
@@ -397,6 +394,10 @@ a {
 }
 
 .cart-button:hover::before {
+  background-image: url(../img/basket-black.svg);
+}
+
+.catalog-body .cart-button::before {
   background-image: url(../img/basket-red.svg);
 }
 
@@ -974,6 +975,12 @@ padding-right: 2%;*/
 .login-form {
   visibility: hidden;
   z-index: 100;
+  position: absolute;
+  padding: 0;
+  border-radius: 4px;
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+  cursor: default;
 }
 
 .contact-form {
@@ -987,33 +994,18 @@ padding-right: 2%;*/
   position: relative;
 }
 
-.catalog-dropdown-items,
-.login-form,
-.search-form,
-.basket-form {
-  position: absolute;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-
 .login-form {
-  display: inline-block;
-  position: absolute;
-  padding: 18px 20px;
+  padding: 0 20px 18px;
   font-size: 0;
-  background-color: #f8f7f4;
-  border-radius: 4px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
-  cursor: default;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
 }
 
-.login-dropdown-popup-wrap {
-  position: absolute;
-  top: 100%;
-  right: 0%;
+.login-actions {
+  display: flex;
+  justify-content: space-around;
 }
 
 .login-form-link {
@@ -1023,6 +1015,17 @@ padding-right: 2%;*/
   font-size: 13px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.basket-form {
+  right: 0;
+  min-width: 540px;
+  visibility: visible;
+  color: #323232
+}
+
+.cart-delete {
+  background-image: url(../img/cross-small.svg);
 }
 
 
@@ -1053,8 +1056,8 @@ button {
   font-weight: 400;
 }
 
-.catalog-dropdown-wrapper {
-  padding-top: 5px;
+.dropdown-wrapper {
+  padding-top: 4px;
 }
 
 .catalog-dropdown:hover .catalog-dropdown-items {
@@ -1069,16 +1072,13 @@ button {
 
 .search-dropdown:hover .search-form {
   visibility: visible;
-  margin: 0;
 }
 
 .search-form {
-  position: absolute;
-  padding: 20px 15px;
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
-  cursor: default;
+  padding: 10px 15px;
+  right: 0;
+  min-width: 300px;
+  margin: 0;
 }
 
 .login-dropdown:hover .login-form {
@@ -1152,4 +1152,6 @@ input[type="password"] {
   padding: 3px 15px;
   font-size: 14px;
   line-height: 24px;
+  box-sizing: border-box;
+  width: 100%;
 }

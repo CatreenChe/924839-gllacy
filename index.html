@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="index-body">
   <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -17,14 +17,12 @@
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
-          </a>
+          <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
           <ul class="site-navigation">
             <li>
               <div class="catalog-dropdown">
                 <a class="site-navigation-items" href="catalog.html">Каталог</a>
-                <div class="catalog-dropdown-wrapper">
+                <div class="dropdown-wrapper">
                   <ul class="catalog-dropdown-items">
                     <li class="catalog-categories"><a href="#">Новинки</a></li>
                     <li class="catalog-categories"><a href="catalog.html">Сливочное</a></li>
@@ -42,12 +40,9 @@
             <li>
               <div class="search-dropdown">
                 <a class="user-navigation-item button-search" href="http://search.html"></a>
-                <div class="search-forms">
+                <div class="dropdown-wrapper">
                   <form class="search-form" method="get" action="http://search.html">
-                    <p>
-                      <label for="search-input" hidden="">Что ищем?</label>
-                      <input type="text" id="search-input" placeholder="Что ищем?">
-                    </p>
+                    <input type="text" id="search-input" placeholder="Что ищем?">
                   </form>
                 </div>
               </div>
@@ -55,7 +50,7 @@
             <li>
               <div class="login-dropdown">
                 <a class="user-navigation-item login-link" href="http://search.html">Вход</a>
-                <div class="login-dropdown-popup-wrap">
+                <div class="dropdown-wrapper">
                   <form class="login-form" method="get" action="http://search.html">
                     <div class="form-user-container">
                       <p>
@@ -67,10 +62,12 @@
                         <input id="user-password" type="password" name="password" placeholder="Пароль">
                       </p>
                     </div>
-                    <button type="submit">Войти</button>
-                    <div class="login-form-links">
-                      <a class="login-form-link" href="#">Забыли пароль?</a>
-                      <a class="login-form-link" href="#">Новая регистрация</a>
+                    <div class="login-actions">
+                      <button type="submit">Войти</button>
+                      <div class="login-form-links">
+                        <a class="login-form-link" href="#">Забыли пароль?</a>
+                        <a class="login-form-link" href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -79,21 +76,6 @@
             <li>
               <div class="cart-dropdown">
                 <a class="user-navigation-item cart-button" href="cart.html">Пусто</a>
-                <div class="basket-form">
-                  <table>
-                    <tr>
-                      <td>Пломбир с апельсиновым джемом</td>
-                      <td>1.5 кг</td>
-                      <td>300 р.</td>
-                    </tr>
-                    <tr>
-                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td>1.5 кг</td>
-                      <td>450 р.</td>
-                    </tr>
-                  </table>
-                  <a href="Checkout">Оформить заказ</a>
-                </div>
               </div>
             </li>
           </ul>
