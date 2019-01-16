@@ -42,30 +42,38 @@
             <li>
               <div class="search-dropdown">
                 <a class="user-navigation-item button-search" href="http://search.html"></a>
-                <form class="search-form" method="get" action="http://search.html">
-                  <p>
-                    <label for="search-input" hidden="">Что ищем?</label>
-                    <input type="text" id="search-input" placeholder="Что ищем?">
-                  </p>
-                </form>
+                <div class="search-forms">
+                  <form class="search-form" method="get" action="http://search.html">
+                    <p>
+                      <label for="search-input" hidden="">Что ищем?</label>
+                      <input type="text" id="search-input" placeholder="Что ищем?">
+                    </p>
+                  </form>
+                </div>
               </div>
             </li>
             <li>
               <div class="login-dropdown">
                 <a class="user-navigation-item login-link" href="http://search.html">Вход</a>
-                <form class="login-form" method="get" action="http://search.html">
-                  <p>
-                    <label for="login-user" hidden="">Электронная почта</label>
-                    <input type="text" id="login-user" name="login" placeholder="Электронная почта">
-                  </p>
-                  <p>
-                    <label for="user-password" hidden="">Пароль</label>
-                    <input id="user-password" type="password" name="password" placeholder="Пароль">
-                  </p>
-                  <button type="submit">Войти</button>
-                  <a class="login-form-link" href="#">Забыли пароль?</a>
-                  <a class="login-form-link" href="#">Новая регистрация</a>
-                </form>
+                <div class="login-dropdown-popup-wrap">
+                  <form class="login-form" method="get" action="http://search.html">
+                    <div class="form-user-container">
+                      <p>
+                        <label for="login-user" hidden="">Электронная почта</label>
+                        <input type="text" id="login-user" name="login" placeholder="Электронная почта">
+                      </p>
+                      <p>
+                        <label for="user-password" hidden="">Пароль</label>
+                        <input id="user-password" type="password" name="password" placeholder="Пароль">
+                      </p>
+                    </div>
+                    <button type="submit">Войти</button>
+                    <div class="login-form-links">
+                      <a class="login-form-link" href="#">Забыли пароль?</a>
+                      <a class="login-form-link" href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
               </div>
             </li>
             <li>
@@ -275,4 +283,4 @@
   </div>
 </body>
 
-</html> 
+</html>
