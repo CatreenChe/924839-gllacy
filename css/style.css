@@ -209,7 +209,8 @@ a {
 
 .user-navigation .login-link,
 .user-navigation .button-search,
-.user-navigation .cart-button {
+.user-navigation .cart-button,
+.cart-delete-btn {
   position: relative;
 }
 
@@ -236,7 +237,8 @@ a {
 
 .button-search::before,
 .login-link::before,
-.cart-button::before {
+.cart-button::before,
+.cart-delete-btn::before {
   content: "";
   position: absolute;
   width: 21px;
@@ -267,6 +269,26 @@ a {
 .login-link {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, .2);
+}
+
+.cart-delete-col {
+  width: 20px;
+}
+
+.cart-product-preview {
+  width: 45px;
+}
+
+.cart-product-name {
+  width: 250px;
+}
+
+.cart-product-price {
+  width: 120px;
+}
+
+.cart-product-amount {
+  width: 70px;
 }
 
 .site-navigation-items {
@@ -969,7 +991,7 @@ padding-right: 2%;*/
 }
 
 .catalog-dropdown-items,
-.basket-form,
+.cart-form,
 .contact-form,
 .search-form,
 .login-form {
@@ -1017,21 +1039,55 @@ padding-right: 2%;*/
   font-weight: 400;
 }
 
-.basket-form {
+.cart-form {
   right: 0;
-  min-width: 540px;
-  visibility: visible;
-  color: #323232
+  min-width: 500px;
+  color: #323232;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
-.cart-delete {
+.cart-delete-btn {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.cart-delete-btn::before {
   background-image: url(../img/cross-small.svg);
+  left: 0;
+  top: -3px;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.cart-checkout {
+  padding: 13px 30px;
+  border-radius: 25px;
+  color: #ffffff;
+  background-color: #ec583c;
 }
 
 
 /*уточнить все кнопки и ссылки*/
 
-button {
+.big-red-button {
   display: inline-block;
   vertical-align: top;
   padding: 8px 23px 12px;
@@ -1085,7 +1141,7 @@ button {
   visibility: visible;
 }
 
-.cart-dropdown:hover .basket-form {
+.cart-dropdown:hover .cart-form {
   visibility: visible;
 }
 
