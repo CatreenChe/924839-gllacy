@@ -204,29 +204,10 @@
               <p class="address-small">Для заказов по телефону:</p>
               <p class="address-big">8 812 450-25-25</p>
               <p class="address-small">(с 10 до 20 часов)</p>
-              <a class="feedback-form" href="#">Форма обратной связи</a>
+              <a class="open-feedback-form" href="#">Форма обратной связи</a>
             </div>
           </div>
         </figure>
-        <div class="contact-form">
-          <form class="contact-form" method="get" action="http://search.html">
-            <h3>Мы обязательно вам ответим!</h3>
-            <p>
-              <label for="user-name">Как вас зовут?</label>
-              <input type="text" id="user-name" placeholder="Как вас зовут?">
-            </p>
-            <p>
-              <label for="user-response-mail">Ваша почта для ответа?</label>
-              <input type="text" id="user-response-mail" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
-              <label for="user-message">Напишите что-нибудь</label>
-              <textarea id="user-message" rows="2" placeholder="Напишите что-нибудь..." required></textarea>
-            </p>
-            <button class="big-red-button" type="submit">Отправить</button>
-          </form>
-          <button type="submit">Закрыть</button>
-        </div>
       </main>
 
       <div class="container">
@@ -261,6 +242,18 @@
         </footer>
       </div>
     </div>
+    <div class="feedback-form">
+      <button class="feedback-form-close" type="button">Закрыть</button>
+      <p class="feedback-form-title">Мы обязательно Вам ответим!</p>
+      <form class="feedback-form-profile" action="#" method="post">
+        <input type="text" id="name" name="user-name" placeholder="Как Вас зовут?">
+        <input type="text" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?">
+        <textarea name="comment" id="comment-field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="big-red-button" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="page-fade-overlay"></div>
+    <script src="js/script.js"></script>
   </div>
 </body>
 
