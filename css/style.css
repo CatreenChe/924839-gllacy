@@ -1276,6 +1276,18 @@ textarea {
   width: 100%;
 }
 
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+  border: 2px solid #c7c6c5;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border: 2px solid #8fbdec;
+}
+
 .feedback-form {
   visibility: hidden;
   display: flex;
