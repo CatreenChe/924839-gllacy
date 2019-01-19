@@ -98,13 +98,13 @@ a {
 
 .slide-button {
   display: inline-block;
+  vertical-align: top;
   padding: 12px 44px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
   text-align: center;
   color: #ffffff;
-  vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
@@ -135,6 +135,7 @@ a {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 17px;
   height: 17px;
   margin-right: 8px;
@@ -299,6 +300,7 @@ a {
 
 .site-navigation-items {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: underline;
   padding: 10px 14px;
   color: #ffffff;
@@ -309,6 +311,7 @@ a {
 
 .user-navigation-item {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: underline;
   padding: 9px 14px 9px 45px;
   color: #ffffff;
@@ -381,10 +384,10 @@ a {
 
 .filter-form-item {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  vertical-align: top;
   border: none;
   color: #ffffff;
   cursor: pointer;
@@ -489,6 +492,7 @@ a {
 .filter-checkbox-control {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -725,6 +729,8 @@ a {
   border-radius: 14px;
   color: #323232;
   background-color: #ffffff;
+  max-height: 306px;
+  margin-bottom: 15px;
 }
 
 .advantages .specification-shop {
@@ -744,12 +750,13 @@ a {
 }
 
 .excellence li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
   width: 48.9%;
   list-style-type: none;
   background-repeat: no-repeat;
   padding: 12px 8px 10px 60px;
-  position: relative;
-  display: inline-block;
   box-sizing: border-box;
 }
 
@@ -987,9 +994,8 @@ a {
 }
 
 .page {
-  border-radius: 50%;
-  color: #fff;
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -997,7 +1003,8 @@ a {
   position: relative;
   text-align: center;
   text-decoration: none;
-  vertical-align: top;
+  color: #fff;
+  border-radius: 50%;
 }
 
 .next-page,
@@ -1056,6 +1063,7 @@ a {
 
 .social-button {
   display: inline-block;
+  vertical-align: middle;
   height: 32px;
   width: 32px;
   margin: 10px;
@@ -1216,6 +1224,7 @@ a {
 
 .cart-delete-btn {
   display: inline-block;
+  vertical-align: middle;
   width: 14px;
   height: 14px;
   font-size: 0;
@@ -1443,6 +1452,7 @@ textarea:focus {
 
 .feedback-form-close {
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   font-size: 0;
