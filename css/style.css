@@ -391,10 +391,11 @@ a {
   justify-content: space-between;
 }
 
+.filter-form-sort:focus,
 .filter-form-sort:hover {
   color: #323232;
   background: url("../img/icon-down-dir.svg") no-repeat right #aabcb2;
-  background-position: 95% 60%
+  background-position: 95% 60%;
 }
 
 .filter-form-sort {
@@ -408,7 +409,19 @@ a {
   line-height: 18px;
   font-weight: 500;
   background: url("../img/icon-down-dir-white.svg") no-repeat right #aabcb2;
-  background-position: 95% 60%
+  background-position: 95% 60%;
+  min-width: 190px;
+}
+
+.filter-form-sort:focus {
+  background-color: #fff;
+}
+
+.filter-form-sort option {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: #fff;
 }
 
 .filter-form-fat {
