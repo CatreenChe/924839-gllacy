@@ -9,22 +9,6 @@ body {
   background-color: #849d8f;
 }
 
-input,
-textarea {
-  font-family: "Roboto", Arial, sans-serif;
-}
-
-select {
-  /* for Firefox */
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none;
-}
-
-select::-ms-expand {
-  display: none;
-}
-
 a {
   text-decoration: none;
   color: #ffffff;
@@ -452,6 +436,12 @@ a {
   background: url("../img/icon-down-dir-white.svg") no-repeat right #aabcb2;
   background-position: 95% 60%;
   min-width: 190px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.filter-form-sort::-ms-expand {
+  display: none;
 }
 
 .filter-form-sort:focus {
