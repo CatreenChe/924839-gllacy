@@ -172,18 +172,6 @@ a {
   background-color: #ffffff;
 }
 
-#product-1:checked~.site-wrapper .icecream-card:hover {
-  background-color: #9bafa3;
-}
-
-#product-2:checked~.site-wrapper .icecream-card:hover {
-  background-color: #adb6c1;
-}
-
-#product-3:checked~.site-wrapper .icecream-card:hover {
-  background-color: #bbaea9;
-}
-
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -720,7 +708,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-top: -10px;
+  margin-top: 10px;
   border-radius: 14px;
   color: #323232;
   background-color: #ffffff;
@@ -883,11 +871,9 @@ a {
 }
 
 .item-cards-table {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   text-align: center;
-  /*padding-left: 2%;
-padding-right: 2%;*/
   padding: 0;
 }
 
@@ -895,29 +881,34 @@ padding-right: 2%;*/
   width: 23%;
   position: relative;
   margin-bottom: 10px;
-  padding-left: 13px;
   padding-right: 13px;
   padding-top: 7px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.icecream-card:hover {
-  background-color: #9bafa3;
+.icecream-card::after {
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+  content: "";
+  display: none;
+  height: 405px;
+  left: -13px;
+  position: absolute;
+  top: 0;
+  width: 293px;
+  opacity: .5;
+  z-index: 2;
 }
 
-.icecream-card:first-child {
-  padding-left: 0;
-}
-
-.img-wrap {
-  padding: 0;
-  margin: 0;
+.icecream-card:hover::after {
+  display: flex;
 }
 
 .img-wrap::before {
   content: "";
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
   left: 10px;
@@ -929,13 +920,15 @@ padding-right: 2%;*/
 }
 
 .button-preview {
-  position: relative;
-  top: 20px;
+  position: absolute;
   padding: 13px;
   visibility: hidden;
   border-radius: 30px;
   color: #fefefe;
-  background-color: #f16642;
+  background-color: #e84d37;
+  bottom: -60px;
+  width: 61%;
+  left: 13%;
 }
 
 .icecream-card:hover .button-preview {
