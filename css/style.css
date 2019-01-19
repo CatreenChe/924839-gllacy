@@ -332,7 +332,7 @@ a {
   text-decoration: none;
 }
 
-.catalog-body .catalog-dropdown .site-navigation-items {
+.catalog-body .catalog-a {
   background-color: #d07058;
 }
 
@@ -1334,15 +1334,6 @@ a {
 
 .catalog-dropdown-items li:active {
   background-color: #f6b5a5;
-}
-
-.catalog-dropdown-items .sliv {
-  background-color: #d07058;
-}
-
-.catalog-dropdown-items .sliv a {
-  color: #ffffff;
-  /*вернуться*/
 }
 
 .catalog-categories a {
