@@ -145,30 +145,30 @@ a {
   cursor: pointer;
 }
 
-#product-1:checked~.site-wrapper {
+.product-1:checked~.site-wrapper {
   background-color: #849d8f;
   background-image: url(../img/slider-item1.png);
 }
 
-#product-2:checked~.site-wrapper {
+.product-2:checked~.site-wrapper {
   background-color: #8996a6;
   background-image: url(../img/slider-item2.png);
 }
 
-#product-3:checked~.site-wrapper {
+.product-3:checked~.site-wrapper {
   background-color: #9d8b84;
   background-image: url(../img/slider-item3.png);
 }
 
-#product-1:checked~.site-wrapper #slide1,
-#product-2:checked~.site-wrapper #slide2,
-#product-3:checked~.site-wrapper #slide3 {
+.product-1:checked~.site-wrapper .slide1,
+.product-2:checked~.site-wrapper .slide2,
+.product-3:checked~.site-wrapper .slide3 {
   display: block;
 }
 
-#product-1:checked~.site-wrapper label[for="product-1"],
-#product-2:checked~.site-wrapper label[for="product-2"],
-#product-3:checked~.site-wrapper label[for="product-3"] {
+.product-1:checked~.site-wrapper label[for="product-1"],
+.product-2:checked~.site-wrapper label[for="product-2"],
+.product-3:checked~.site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
@@ -819,7 +819,7 @@ a {
   flex-wrap: wrap;
 }
 
-#user-mail {
+.user-mail {
   flex: 2;
   margin-right: 10px;
 }
@@ -1069,19 +1069,19 @@ a {
   box-shadow: 0 0 0 4px rgba(255, 255, 255, .7), inset 0 0 0 1px rgba(255, 255, 255, .6);
 }
 
-#twitter {
+.twitter {
   background-image: url(../img/twitter.svg);
 }
 
-#instagram {
+.instagram {
   background-image: url(../img/instagram.svg);
 }
 
-#fb {
+.fb {
   background-image: url(../img/fb.svg);
 }
 
-#vk {
+.vk {
   background-image: url(../img/vk.svg);
 }
 
@@ -1104,11 +1104,11 @@ a {
   list-style-type: none;
 }
 
-#heart {
+.heart {
   font-weight: 700;
 }
 
-#heart::before {
+.heart::before {
   content: "";
   position: absolute;
   background-image: url(../img/heart.svg);
@@ -1379,9 +1379,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-#product-1,
-#product-2,
-#product-3 {
+.product-1,
+.product-2,
+.product-3 {
   display: none;
 }
 
@@ -1490,7 +1490,7 @@ textarea:focus {
   padding-left: 10px;
 }
 
-#comment-field {
+.comment-field {
   font-family: "Roboto", Arial, sans-serif;
   color: #999999;
   font-size: 16px;

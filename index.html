@@ -10,9 +10,9 @@
 </head>
 
 <body class="index-body">
-  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <input class="visually-hidden product-1" id="product-1" type="radio" name="toggle" checked>
+  <input class="visually-hidden product-2" id="product-2" type="radio" name="toggle">
+  <input class="visually-hidden product-3" id="product-3" type="radio" name="toggle">
   <div class="site-wrapper">
     <div class="container">
       <header class="main-header">
@@ -42,7 +42,7 @@
                 <a class="user-navigation-item button-search" href="http://search.html"></a>
                 <div class="dropdown-wrapper">
                   <form class="search-form" method="get" action="http://search.html">
-                    <input type="text" id="search-input" placeholder="Что ищем?">
+                    <input type="text" class="search-input" placeholder="Что ищем?">
                   </form>
                 </div>
               </div>
@@ -94,15 +94,15 @@
             <label for="product-3">Третий</label>
           </div>
           <ul class="slider-list">
-            <li class="slider-item slide" id="slide1">
+            <li class="slider-item slide slide1">
               <h3 class="slide-title"> Крем-брюле и пломбир с малиновым джемом </h3>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider-item slide" id="slide2">
+            <li class="slider-item slide slide2">
               <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider-item slide" id="slide3">
+            <li class="slider-item slide slide3">
               <h3 class="slide-title"> Пломбир с помадкой и клубничный щербет </h3>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
@@ -186,7 +186,7 @@
             <section class="newsletter">
               <form class="mail-form" method="get" action="http://search.html">
                 <p class="newsletter-p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <input type="text" id="user-mail" placeholder="Электронная почта">
+                <input type="text" class="user-mail" placeholder="Электронная почта">
                 <button class="big-red-button" type="submit">Отправить</button>
               </form>
             </section>
@@ -212,21 +212,21 @@
         <footer class="main-footer">
           <div class="footer-social">
             <div>
-              <a class="social-button" id="twitter" href="#"></a>
+              <a class="social-button twitter" href="#"></a>
             </div>
             <div>
-              <a class="social-button" id="instagram" href="#"></a>
+              <a class="social-button instagram" href="#"></a>
             </div>
             <div>
-              <a class="social-button" id="fb" href="#"></a>
+              <a class="social-button fb" href="#"></a>
             </div>
             <div>
-              <a class="social-button" id="vk" href="#"></a>
+              <a class="social-button vk" href="#"></a>
             </div>
           </div>
           <div class="footer-info">
             <ul class="flex-container-footer-info">
-              <li><a class="info-link" id="heart" href="#">Для поставщиков</a></li>
+              <li><a class="info-link heart" href="#">Для поставщиков</a></li>
               <li><a class="info-link" href="#">О производстве</a></li>
               <li><a class="info-link" href="#">Наши документы</a></li>
               <li><a class="info-link" href="#">Экологические стандарты</a></li>
@@ -234,7 +234,7 @@
           </div>
           <div class="footer-copyright">
             <p>Сделано в <a class="HTML-Academy" href="https://htmlacademy.ru">HTML
-                  Academy</a> @ 2016</p>
+                  Academy</a> @ 2019</p>
             <img src="img/logo-htmlacademy.svg" alt="логотип htmlacademy" width="108" height="39">
           </div>
         </footer>
@@ -244,9 +244,9 @@
       <button class="feedback-form-close" type="button">Закрыть</button>
       <p class="feedback-form-title">Мы обязательно Вам ответим!</p>
       <form class="feedback-form-profile" action="#" method="post">
-        <input type="text" id="name" name="user-name" placeholder="Как Вас зовут?">
-        <input type="text" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?">
-        <textarea name="comment" id="comment-field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
+        <input type="text" class="name" name="user-name" placeholder="Как Вас зовут?">
+        <input type="text" class="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?">
+        <textarea name="comment" class="comment-field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
         <button class="big-red-button" type="submit">Отправить</button>
       </form>
     </div>
