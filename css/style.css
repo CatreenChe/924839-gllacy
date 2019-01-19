@@ -480,22 +480,60 @@ a {
   background: white;
 }
 
-
-/*
-.filter-form-fillers {
-  list-style-type: none;
+.fillers-checkboxes {
+  padding: 10px 0 0 30px;
+  height: 27px;
 }
 
-.filter-form-fillers li {
+.filter-checkbox-control {
+  position: relative;
   display: inline-block;
-  padding: 8px 16px 8px 0;
-  margin-right: 2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 24px
 }
 
-.filter-form-fillers li:first-child {
-  padding-left: 15px;
+.filter-checkbox-control input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-*/
+
+.filter-form-checkbox-label::before {
+  position: absolute;
+  background-image: url(../img/checkbox-off.svg);
+  left: -10px;
+  top: -3px;
+  content: "";
+  width: 23px;
+  height: 23px;
+  opacity: 0.5;
+}
+
+.filter-form-checkbox-label:hover::before,
+.filter-form-checkbox-label:focus::before {
+  opacity: 1;
+}
+
+.filter-checkbox-control input:checked~.filter-form-checkbox-label::before {
+  position: absolute;
+  background-image: url(../img/checkbox-on.svg);
+  left: -10px;
+  top: -3px;
+  content: "";
+  width: 27px;
+  height: 23px;
+  opacity: 0.8;
+}
+
+.filter-checkbox-control input:checked~.filter-form-checkbox-label:hover::before,
+.filter-checkbox-control input:checked~.filter-form-checkbox-label:focus::before {
+  opacity: 1;
+}
 
 .filter-form-botton {
   font-size: 16px;
