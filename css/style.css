@@ -360,7 +360,7 @@ a {
 
 .active:hover,
 .active:focus {
-  background-color: none;
+  background-color: transparent;
   color: #ffbc9e;
 }
 
