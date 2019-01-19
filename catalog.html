@@ -131,134 +131,110 @@
         <li><a>Сливочное</a></li>
       </ul>
     </section>
+
     <section class="catalog">
       <h1 class="icecream-category">Сливочное мороженое</h1>
       <div class="catalog-filter">
         <h3 class="visually-hidden">Отфильтровать список:</h3>
         <form class="filter-form" action="/" method="get">
-
-
-
           <fieldset class="filter-form-item">
             <legend class="filter-form-title">Cортировка:</legend>
-            <select class="filter-form-sort" name="sort">
-            <option value="popular">по популярности</option>
-            <option value="сheap">cначала недорогие</option>
-            <option value="expensive">cначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
-            <span class="filter-form-sort-icon"></span>
-          </fieldset>
+            <div class="filter-control-wrapper">
 
-          <fieldset class="filter-item">
-            <legend>Стоимость: 100 руб. - 500 руб.</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+              <select class="filter-form-sort" name="sort">
+              <option value="popular">по популярности</option>
+              <option value="сheap">cначала недорогие</option>
+              <option value="expensive">cначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select></div>
+          </fieldset>
+          <fieldset class="filter-form-item">
+            <legend class="filter-form-title">Цена: 100 руб. - 500 руб.</legend>
+            <div class="filter-control-wrapper">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min"></div>
                 </div>
-                <div class="toggle toggle-max"></div>
-                <div class="toggle toggle-min"></div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form-item">
+            <legend class="filter-form-title">Жирность:</legend>
+            <div class="filter-control-wrapper">
+              <div class="filter-form-fat">
+                <label class="filter-form-radio">0%
+                  <input type="radio" name="fat" value="0" checked>
+                  <span class="filter-form-radio-icon"></span>                
+                  <span class="checkmark"></span>
+              </label>
+                <label class="filter-form-radio">до 10%
+                <input type="radio" name="fat" value="0">
+                <span class="filter-form-radio-icon"></span>
+                <span class="checkmark"></span>
+              </label>
+                <label class="filter-form-radio">до 30%
+                  <input type="radio" name="fat" value="0">
+                  <span class="filter-form-radio-icon"></span>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="filter-form-radio">выше 30%
+                <input type="radio" name="fat" value="0">
+                <span class="filter-form-radio-icon"></span>
+                <span class="checkmark"></span>
+              </label>
               </div>
             </div>
           </fieldset>
 
 
-
-
-
-
-          <fieldset class="filter-form-item">
-            <legend class="filter-form-title">Жирность:</legend>
-            <ul class="filter-form-fat">
-              <li class="filter-form-fat-item">
-                <label class="filter-form-radio">
-                <input type="radio" name="fat" value="0">
-                <span class="filter-form-radio-icon">
-                </span>
-                <span class="filter-form-radio-label">0%</span>
-              </label>
-              </li>
-              <li class="filter-form-fat-item">
-                <label class="filter-form-radio">
-                <input type="radio" name="fat" value="0">
-                <span class="filter-form-radio-icon">
-                </span>
-                <span class="filter-form-radio-label"> до 10%</span>
-              </label>
-              </li>
-              <li class="filter-form-fat-item">
-                <label class="filter-form-radio">
-                <input type="radio" name="fat" value="0">
-                <span class="filter-form-radio-icon">
-                </span>
-                <span class="filter-form-radio-label"> до 30%</span>
-              </label>
-              </li>
-              <li class="filter-form-fat-item">
-                <label class="filter-form-radio">
-                <input type="radio" name="fat" value="0">
-                <span class="filter-form-radio-icon">
-
-                </span>
-                <span class="filter-form-radio-label"> выше 30%</span>
-              </label>
-              </li>
-            </ul>
-          </fieldset>
           <fieldset class="filter-form-item">
             <legend class="filter-form-title">Наполнители:</legend>
-            <ul class="filter-form-fillers">
-              <li class="filter-form-fillers-item">
-                <label class="filter-checkbox-control">
+            <div class="filter-control-wrapper">
+
+              <label class="filter-checkbox-control">
                 <input type="checkbox" name="filler-chocolate" checked="">
-                <span class="filter-form-checkbox-icon">
-                  
-                </span>
+                <span class="filter-form-checkbox-icon">             </span>
                 <span class="filter-form-checkbox-label">шоколадные</span>
               </label>
-              </li>
-              <li class="filter-form-fillers-item">
-                <label class="filter-checkbox-control">
+
+              <label class="filter-checkbox-control">
                 <input type="checkbox" name="filler-sugar" checked="">
-                <span class="filter-form-checkbox-icon">
-                  
-                </span>
+                <span class="filter-form-checkbox-icon"></span>
                 <span class="filter-form-checkbox-label">сахарные присыпки</span>
               </label>
-              </li>
-              <li class="filter-form-fillers-item">
-                <label class="filter-checkbox-control">
+
+              <label class="filter-checkbox-control">
                 <input type="checkbox" name="filler-fruit" checked="">
-                <span class="filter-form-checkbox-icon">
-                  
-                </span>
+                <span class="filter-form-checkbox-icon"></span>
                 <span class="filter-form-checkbox-label">фрукты</span>
               </label>
-              </li>
-              <li class="filter-form-fillers-item">
-                <label class="filter-checkbox-control">
+
+              <label class="filter-checkbox-control">
                 <input type="checkbox" name="filler-syrup" checked="">
-                <span class="filter-form-checkbox-icon">
-                  
-                </span>
+                <span class="filter-form-checkbox-icon"></span>
                 <span class="filter-form-checkbox-label">сиропы</span>
               </label>
-              </li>
-              <li class="filter-form-fillers-item">
-                <label class="filter-checkbox-control">
+
+              <label class="filter-checkbox-control">
                 <input type="checkbox" name="filler-jam" checked="">
-                <span class="filter-form-checkbox-icon">
-                  
-                </span>
+                <span class="filter-form-checkbox-icon"></span>
                 <span class="filter-form-checkbox-label">джемы</span>
               </label>
-              </li>
-            </ul>
+
+            </div>
           </fieldset>
+
+
           <input class="filter-form-botton" type="submit" value="Применить">
         </form>
       </div>
+
+
+
       <section class="item-cards">
         <h2 class="visually-hidden">Карточки товаров</h2>
         <div class="item-cards-table">
@@ -290,7 +266,7 @@
             <img src="img/icecream-cowberry.jpg" alt="фото мороженки">
             <p class="card-price">325 ₽/кг</p>
             <a class="card-name">Сливочное c брусничным джемом</a>
-            <div class="hover-product-wrap">><a class="button-preview" href="#">Быстрый просмотр</a></div>
+            <div class="hover-product-wrap"><a class="button-preview" href="#">Быстрый просмотр</a></div>
           </div>
           <div class="icecream-card">
             <img src="img/icecream-blueberries.jpg" alt="фото мороженки">
