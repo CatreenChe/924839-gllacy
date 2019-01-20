@@ -21,7 +21,7 @@ a {
 .container {
   width: 1146px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .main-slider {
@@ -58,9 +58,10 @@ a {
 .main-slider {
   position: relative;
   padding-top: 321px;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   text-align: center;
   color: #ffffff;
+  min-height: 230px;
 }
 
 .slider-list {
@@ -75,19 +76,21 @@ a {
 
 .slide-title {
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
+  margin: -3px 19.5%;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .slide-button {
   display: inline-block;
   vertical-align: top;
-  padding: 12px 44px;
-  font-weight: 600;
-  font-size: 31px;
+  top: 33px;
+  justify-content: center;
+  position: relative;
+  padding: 11px 40px;
+  font-weight: 700;
+  font-size: 32px;
   line-height: 41px;
   text-align: center;
   color: #ffffff;
@@ -125,8 +128,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
-  left: 0;
+  bottom: 41px;
   z-index: 20;
   font-size: 0;
 }
@@ -169,6 +171,10 @@ a {
 .product-2:checked~.site-wrapper label[for="product-2"],
 .product-3:checked~.site-wrapper label[for="product-3"] {
   background-color: #ffffff;
+}
+
+.index-content {
+  margin-top: 13px;
 }
 
 .main-navigation {
@@ -708,6 +714,14 @@ a {
   justify-content: space-between;
   float: none;
   margin-bottom: 40px;
+  min-height: 230px;
+}
+
+.promo-cards-items p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .promo-cards-raspberries,
@@ -719,7 +733,6 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  margin: 0 0 20px;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -739,8 +752,8 @@ a {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 6px;
+  margin-bottom: 15px;
 }
 
 .promo-button {
@@ -758,6 +771,9 @@ a {
   text-align: center;
   color: #ffffff;
   background: #f26843;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .assortment-index {
@@ -773,11 +789,11 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 14px;
   color: #323232;
   background-color: #ffffff;
-  max-height: 306px;
+  min-height: 306px;
   margin-bottom: 15px;
 }
 
@@ -787,10 +803,9 @@ a {
   display: flex;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 0px;
-  margin-bottom: 9px;
+  margin: 0px auto;
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 24px;
 }
 
 .excellence {
@@ -803,18 +818,23 @@ a {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 9px;
 }
 
 .excellence li {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 48.9%;
+  width: 48.6%;
   list-style-type: none;
   background-repeat: no-repeat;
-  padding: 12px 8px 10px 60px;
+  padding: 12px 0 10px 56px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.excellence li:nth-child(2n+1) {
+  margin-right: 48px;
 }
 
 .about-us-ice-cream {
@@ -844,6 +864,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .blog {
@@ -853,12 +874,17 @@ a {
   border-radius: 15px;
   border-width: 1px;
   border-style: solid;
-  padding-left: 20px;
+  padding: 21px 0 0 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-image: url(../img/strawberry-background.jpg);
   background-color: #ffffff;
   color: #323232;
+  min-height: 220px;
+}
+
+.blog-header {
+  margin-bottom: 4px;
 }
 
 .blog a {
@@ -872,16 +898,21 @@ a {
 
 .newsletter {
   width: 48.8%;
-  height: 200px;
+  min-height: 220px;
   border-radius: 15px;
   background-image: url(https://htmlacademy-htmlcss.github.io/924839-gllacy/5/img/bg-post.svg);
   color: #5a5a5a;
   background-color: #f8f7f4;
 }
 
+.newsletter-p {
+  line-height: 22px;
+  margin-bottom: 35px;
+}
+
 .newsletter>.mail-form {
   margin: 6px;
-  padding: 10px 10px 30px 20px;
+  padding: 12px 7px 35px 19px;
   border-radius: 15px;
   background-color: #f8f7f4;
   display: -webkit-box;
@@ -899,14 +930,18 @@ a {
 }
 
 .mail-form button {
-  margin-right: 14px;
+  margin-right: 13px;
 }
 
 .map {
   position: relative;
-  margin: 0;
+  margin: 39px 0 0 -27px;
   min-width: 1200px;
-  margin-left: -10px;
+  min-height: 430px
+}
+
+.map p {
+  margin-bottom: 0;
 }
 
 .container-address {
@@ -933,7 +968,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 25px;
+  padding: 29px 20px 0px 23px;
   color: #323232;
 }
 
@@ -944,26 +979,33 @@ a {
   margin: 0;
 }
 
+.address-small:nth-child(1) {
+  width: 60%;
+}
+
+.address-small:nth-child(3) {
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
 .store-address .address-big {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
 .open-feedback-form {
-  padding: 13px 30px;
+  padding: 10px 28px;
   border-radius: 25px;
-  color: #ffffff;
-  background-color: #ec583c;
-}
-
-.store-address a {
+  font-size: 18px;
+  font-weight: 700;
   position: absolute;
-  bottom: 30px;
-  border-radius: 20px;
+  bottom: 24px;
   color: #fefefe;
   background-color: #ef5f3f;
+  left: 23px;
 }
 
 .item-cards-table {
@@ -977,13 +1019,16 @@ a {
 }
 
 .icecream-card {
-  width: 23%;
+  width: 267px;
   position: relative;
   margin-bottom: 10px;
-  padding-right: 13px;
-  padding-top: 7px;
+  margin-right: 26px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.icecream-card:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 .icecream-card::after {
@@ -996,7 +1041,7 @@ a {
   height: 405px;
   left: -13px;
   position: absolute;
-  top: 0;
+  top: -6px;
   width: 293px;
   opacity: .5;
   z-index: 2;
@@ -1014,8 +1059,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: -2px;
   background-image: url(../img/sprite.png);
   background-position: -10px 528px;
   width: 62px;
@@ -1047,7 +1091,8 @@ a {
   position: relative;
   text-decoration: underline;
   text-align: center;
-  margin-top: -40px;
+  margin-top: -32px;
+  line-height: 22px;
 }
 
 .card-price {
@@ -1056,12 +1101,19 @@ a {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   position: relative;
-  margin-top: -70px;
+  margin-top: -77px;
   text-align: left;
   font-size: 45px;
   font-weight: bold;
+}
+
+.card-price span {
+  font-size: 30px;
+  font-weight: 700;
+  top: 15px;
+  position: relative;
+  left: -3px;
 }
 
 .icecream-card img {
@@ -1149,6 +1201,7 @@ a {
   font-size: 13px;
   line-height: 18px;
   color: #e6ebe9;
+  padding-left: 4px;
 }
 
 .footer-social {
@@ -1158,7 +1211,9 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 200px;
+  width: 180px;
+  justify-content: space-between;
+  padding-top: 14px;
 }
 
 .social-button {
@@ -1166,7 +1221,6 @@ a {
   vertical-align: middle;
   height: 32px;
   width: 32px;
-  margin: 10px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, .6), inset 0 0 0 1px rgba(255, 255, 255, .6);
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .6), inset 0 0 0 1px rgba(255, 255, 255, .6);
@@ -1201,7 +1255,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 500px;
   font-weight: 400;
 }
 
@@ -1216,11 +1270,14 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
+  padding-left: 117px;
+  margin-top: 27px;
 }
 
 .flex-container-footer-info li {
   width: 50%;
   list-style-type: none;
+  margin-left: -33px;
 }
 
 .heart {
@@ -1235,8 +1292,8 @@ a {
   background-position: 0 0;
   width: 15px;
   height: 13px;
-  top: 2px;
-  left: 16px;
+  top: 3px;
+  left: 62px;
 }
 
 .footer-social a,
@@ -1256,6 +1313,17 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 12px;
+}
+
+.footer-copyright img {
+  position: relative;
+  left: -38px;
+  top: 11px;
+}
+
+.footer-copyright p {
+  margin-top: 15px;
 }
 
 .footer-info a:focus,
@@ -1401,7 +1469,7 @@ a {
 .big-red-button {
   display: inline-block;
   vertical-align: top;
-  padding: 8px 23px 12px;
+  padding: 8px 19px 12px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1495,7 +1563,7 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -1544,7 +1612,7 @@ textarea::-webkit-input-placeholder {
 input[type="text"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
 textarea::-moz-placeholder {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
 }
 
