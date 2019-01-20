@@ -374,6 +374,8 @@ a {
   font-weight: 400;
   list-style-type: none;
   padding-left: 0;
+  margin-top: 22px;
+  margin-bottom: -2px;
 }
 
 .breadcrumbs a:nth-child(3) {
@@ -396,7 +398,7 @@ a {
 .filter-form-botton,
 .filter-form-sort,
 .filter-control-wrapper {
-  height: 37px;
+  height: 35px;
   border-radius: 17px;
   margin: 0;
   padding: 0;
@@ -404,8 +406,9 @@ a {
 }
 
 .filter-form {
-  margin-bottom: 56px;
+  margin-bottom: 26px;
   font-size: 0;
+  margin-top: 19px;
 }
 
 .filter-form-item {
@@ -420,18 +423,20 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 7px;
 }
 
 .filter-form-sort:focus,
 .filter-form-sort:hover {
   color: #323232;
   background: url("../img/icon-down-dir.svg") no-repeat right #aabcb2;
-  background-position: 95% 60%;
+  background-position: 93% 58%;
 }
 
 .filter-form-sort {
   height: 36px;
-  padding: 0 25px 0 13px;
+  padding: 0 25px 0 9px;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -440,7 +445,7 @@ a {
   line-height: 18px;
   font-weight: 500;
   background: url("../img/icon-down-dir-white.svg") no-repeat right #aabcb2;
-  background-position: 95% 60%;
+  background-position: 93% 58%;
   min-width: 190px;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -465,7 +470,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 25px;
+  padding-left: 31px;
   padding-top: 10px;
 }
 
@@ -479,8 +484,12 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding-left: 10px;
-  margin-right: 30px;
+  padding-left: 18px;
+  margin-right: 31px;
+}
+
+.filter-form-radio:last-child {
+  margin-right: 21px;
 }
 
 .filter-form-radio input {
@@ -523,7 +532,7 @@ a {
 }
 
 .fillers-checkboxes {
-  padding: 10px 0 0 30px;
+  padding: 8px 0 0 25px;
   height: 27px;
 }
 
@@ -536,7 +545,7 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-right: 24px
+  margin-right: 32px;
 }
 
 .filter-checkbox-control input {
@@ -588,6 +597,7 @@ a {
   border-radius: 15px;
   border: 2px solid#ecefed;
   cursor: pointer;
+  margin-left: -6px;
 }
 
 .filter-form-botton:hover {
@@ -682,11 +692,11 @@ a {
 }
 
 .range-controls .toggle-max {
-  left: 142px;
+  left: 134px;
 }
 
 .range-controls .toggle-min {
-  left: 44px;
+  left: 35px;
 }
 
 .container index-content {
@@ -789,7 +799,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 30px;
   border-radius: 14px;
   color: #323232;
   background-color: #ffffff;
@@ -1021,7 +1030,7 @@ a {
 .icecream-card {
   width: 267px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-right: 26px;
   border-radius: 5px;
   cursor: pointer;
@@ -1091,8 +1100,10 @@ a {
   position: relative;
   text-decoration: underline;
   text-align: center;
-  margin-top: -32px;
+  margin-top: -30px;
   line-height: 22px;
+  width: 96%;
+  left: 5px;
 }
 
 .card-price {
@@ -1123,10 +1134,9 @@ a {
 }
 
 .paginator {
-  margin: 20px 9px 47px 945px;
-  padding-left: 30px;
-  padding-right: 16px;
-  padding-top: 21px;
+  margin: 20px 9px 36px 945px;
+  padding-left: 35px;
+  padding-top: 19px;
   position: relative;
 }
 
@@ -1160,7 +1170,7 @@ a {
 }
 
 .previous-page {
-  left: 9px;
+  left: 13px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1177,7 +1187,7 @@ a {
 }
 
 .next-page {
-  right: 14px;
+  right: -7px;
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
