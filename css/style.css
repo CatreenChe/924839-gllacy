@@ -339,7 +339,7 @@ a {
 }
 
 .button-search {
-  padding: 17px;
+  padding: 17px 17px 0;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .2);
 }
@@ -1742,5 +1742,12 @@ textarea:focus {
 }
 
 .page-fade-overlay-show {
-  display: block
+  display: block;
+}
+
+.button-search,
+.social-button,
+.previous-page,
+.next-page {
+  font-size: 0;
 }
